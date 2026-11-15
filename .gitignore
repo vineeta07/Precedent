@@ -1,0 +1,11 @@
+node_modules/
+static/node_modules/
+static/*/build/
+static/build/
+coverage/
+.env
+.env.*
+*.log
+.DS_Store
+.forge/
+screenshots/tmp/

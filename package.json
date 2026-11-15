@@ -1,0 +1,42 @@
+{
+  "name": "precedent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Precedent remembers what your team decided and promised, and guards new Jira work against it.",
+  "author": "Vineeta",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "eval": "node --import tsx scripts/eval.ts",
+    "eval:build": "node scripts/build-eval-cases.mjs",
+    "lint:manifest": "node scripts/validate-manifest.mjs",
+    "ui:install": "npm --prefix static install",
+    "ui:build": "npm --prefix static run build",
+    "ui:dev": "npm --prefix static run dev",
+    "build": "npm run eval:build && npm run typecheck && npm run ui:build",
+    "check": "npm run eval:build && npm run typecheck && npm test && npm run lint:manifest"
+  },
+  "dependencies": {
+    "@forge/api": "^8.5.0",
+    "@forge/bridge": "^7.3.0",
+    "@forge/events": "^2.1.2",
+    "@forge/kvs": "^1.0.10",
+    "@forge/llm": "^1.0.1",
+    "@forge/react": "^12.5.0",
+    "@forge/resolver": "^2.0.2",
+    "@forge/sql": "^3.0.10",
+    "react": "^18.3.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@forge/manifest": "^13.9.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "ajv": "^8.17.1",
+    "js-yaml": "^4.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.0"
+  }
+}

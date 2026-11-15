@@ -1,0 +1,275 @@
+modules:
+  jira:issuePanel:
+    - key: precedent-issue-panel
+      resource: panel
+      resolver:
+        function: resolver
+      render: native
+      title: Precedent
+      icon: resource:ledger;mark.svg
+
+  jira:globalPage:
+    - key: precedent-ledger
+      resource: ledger
+      resolver:
+        function: resolver
+      title: Precedent
+      icon: resource:ledger;mark.svg
+      layout: blank
+
+  jira:adminPage:
+    - key: precedent-admin
+      resource: admin
+      resolver:
+        function: resolver
+      title: Precedent settings
+      icon: resource:ledger;mark.svg
+      useAsConfig: true
+      useAsGetStarted: true
+
+  confluence:contentBylineItem:
+    - key: precedent-byline
+      resource: byline
+      resolver:
+        function: resolver
+      render: native
+      title: Precedent
+
+  trigger:
+    - key: precedent-issue-trigger
+      function: on-issue-event
+      events:
+        - avi:jira:created:issue
+        - avi:jira:updated:issue
+        - avi:jira:commented:issue
+    - key: precedent-page-trigger
+      function: on-page-event
+      events:
+        - avi:confluence:created:page
+        - avi:confluence:updated:page
+
+  scheduledTrigger:
+    - key: precedent-daily-sync
+      function: daily-sync
+      interval: day
+
+  consumer:
+    - key: precedent-extraction-consumer
+      queue: precedent-extraction
+      resolver:
+        function: consumer
+        method: extract
+    - key: precedent-guard-consumer
+      queue: precedent-guard
+      resolver:
+        function: consumer
+        method: guard
+
+  sql:
+    - key: precedent-ledger-db
+      engine: mysql
+
+  llm:
+    - key: precedent-llm
+      model:
+        - claude
+
+  rovo:agent:
+    - key: precedent-agent
+      name: Precedent
+      description: Remembers what your team decided and promised, and checks new work against it.
+      icon: resource:ledger;mark.svg
+      prompt: >
+        You are Precedent, the memory of this team's decisions and promises.
+        You answer from the Precedent ledger only, using your actions. You never answer from general knowledge
+        about what a team "probably" decided.
+
+        How to work:
+        1. For "did we decide", "why did we", "has this come up before", or any question about past decisions,
+           incidents or commitments, call find-precedents.
+        2. When the user describes a plan, a proposal, or names a work item and asks whether it is OK,
+           call check-conflict. If a work item key is in context, pass it as issueKey.
+        3. For open, overdue or broken commitments, call list-open-promises.
+        4. For details about one decision (for example DEC-12), call explain-decision.
+        5. Only call supersede-decision when the user clearly says the decision has changed and gives the new
+           decision and the reason. Repeat back what you will change and ask for confirmation first.
+
+        Rules you never break:
+        - Every decision or promise you mention MUST carry its key (DEC-n or PRM-n), who owns it, when it was
+          made, the source link, and the exact source quote in quotation marks. If an action returned no link,
+          say "no link recorded" instead of inventing one.
+        - Never invent a decision, promise, owner, date or reason. If the ledger has nothing, say
+          "No precedent found in the ledger" and suggest scanning the relevant Confluence space.
+        - A superseded decision no longer applies. Mention it only as history and name its successor.
+        - Be brief: lead with the verdict in one sentence, then the cited evidence as a short list.
+        - If a promise made after an incident is still open, overdue or broken, say so plainly.
+      conversationStarters:
+        - Did we already decide something about moving auth to Firebase?
+        - Does this work item conflict with any accepted decision?
+        - Which promises from postmortems are still open or overdue?
+        - Has an incident like this happened before, and what did we promise?
+        - Explain decision DEC-12 and who owns it
+        - What decisions have been superseded, and by what?
+      actions:
+        - find-precedents
+        - check-conflict
+        - list-open-promises
+        - explain-decision
+        - supersede-decision
+
+  action:
+    - key: find-precedents
+      name: Find precedents
+      function: find-precedents
+      actionVerb: GET
+      description: >
+        Searches the Precedent ledger for earlier decisions, promises and past incidents related to a topic
+        or a Jira work item. Returns each with its key, owner, date, source link and exact source quote.
+      inputs:
+        query:
+          title: Query
+          type: string
+          required: false
+          description: The topic, plan or symptom to look up, in plain words.
+        issueKey:
+          title: Work item key
+          type: string
+          required: false
+          description: Optional Jira work item key (for example PAY-482) to use as the search context.
+    - key: check-conflict
+      name: Check conflict
+      function: check-conflict
+      actionVerb: GET
+      description: >
+        Checks whether a proposal or a Jira work item goes against any accepted team decision.
+        Returns conflict, revisits or related for each matching decision, with the reason and the cited source.
+      inputs:
+        proposal:
+          title: Proposal
+          type: string
+          required: false
+          description: What the team is about to do, in one or two sentences.
+        issueKey:
+          title: Work item key
+          type: string
+          required: false
+          description: Optional Jira work item key to check instead of free text.
+    - key: list-open-promises
+      name: List open promises
+      function: list-open-promises
+      actionVerb: GET
+      description: >
+        Lists commitments from postmortems and decision pages that are not done yet, with owner, due date,
+        tracking work item and source quote.
+      inputs:
+        owner:
+          title: Owner
+          type: string
+          required: false
+          description: Optional person name to filter by.
+        status:
+          title: Status
+          type: string
+          required: false
+          description: Optional status filter. One of open, overdue, broken, kept. Default is everything not kept.
+    - key: explain-decision
+      name: Explain decision
+      function: explain-decision
+      actionVerb: GET
+      description: >
+        Explains one decision from the ledger: what was decided, why, what was rejected, whether it still
+        applies, its supersede chain, owner and source.
+      inputs:
+        decisionKey:
+          title: Decision key
+          type: string
+          required: true
+          description: The decision key, for example DEC-12.
+    - key: supersede-decision
+      name: Supersede decision
+      function: supersede-decision
+      actionVerb: UPDATE
+      description: >
+        Records that a decision has changed. Creates the new decision and marks the old one as superseded,
+        keeping the chain. Only use after the user confirms.
+      inputs:
+        decisionKey:
+          title: Decision key
+          type: string
+          required: true
+          description: The key of the decision that no longer applies, for example DEC-5.
+        newStatement:
+          title: New decision
+          type: string
+          required: true
+          description: The new decision in one sentence.
+        reason:
+          title: Reason
+          type: string
+          required: true
+          description: Why the decision changed.
+
+  rovo:mcp:
+    - key: precedent-mcp
+      name: Precedent
+      tools:
+        - find-precedents
+        - check-conflict
+        - list-open-promises
+        - explain-decision
+        - supersede-decision
+
+  function:
+    - key: resolver
+      handler: index.resolver
+    - key: consumer
+      handler: index.consumerHandler
+      timeoutSeconds: 120
+    - key: on-issue-event
+      handler: index.onIssueEvent
+    - key: on-page-event
+      handler: index.onPageEvent
+    - key: daily-sync
+      handler: index.dailySync
+      timeoutSeconds: 120
+    - key: find-precedents
+      handler: index.findPrecedents
+    - key: check-conflict
+      handler: index.checkConflict
+    - key: list-open-promises
+      handler: index.listOpenPromises
+    - key: explain-decision
+      handler: index.explainDecision
+    - key: supersede-decision
+      handler: index.supersedeDecision
+
+resources:
+  - key: ledger
+    path: static/ledger/build
+  - key: admin
+    path: static/admin/build
+  - key: panel
+    path: src/frontend/panel.tsx
+  - key: byline
+    path: src/frontend/byline.tsx
+
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - read:jira-user
+    - read:page:confluence
+    - write:page:confluence
+    - read:space:confluence
+    - storage:app
+  content:
+    styles:
+      - unsafe-inline
+
+app:
+  # Created by `forge register`. Replace with your own app id before deploying.
+  id: ari:cloud:ecosystem::app/00000000-0000-0000-0000-000000000000
+  runtime:
+    name: nodejs22.x
+    memoryMB: 512
+    architecture: arm64
