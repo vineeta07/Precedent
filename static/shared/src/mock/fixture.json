@@ -1,0 +1,2827 @@
+{
+ "generatedAt": "2026-11-15T09:00:00.000Z",
+ "summary": {
+  "kpis": {
+   "decisionsTracked": 14,
+   "decisionsAccepted": 12,
+   "promisesOpen": 2,
+   "promisesOverdue": 2,
+   "promisesKept": 7,
+   "promisesBroken": 2,
+   "keepRate": 63.6,
+   "repeatIncidentsCaught": 1,
+   "conflictsCaught": 1
+  },
+  "months": [
+   {
+    "month": "2026-04",
+    "kept": 0,
+    "missed": 0,
+    "decisions": 1
+   },
+   {
+    "month": "2026-05",
+    "kept": 2,
+    "missed": 0,
+    "decisions": 1
+   },
+   {
+    "month": "2026-06",
+    "kept": 2,
+    "missed": 0,
+    "decisions": 2
+   },
+   {
+    "month": "2026-07",
+    "kept": 1,
+    "missed": 1,
+    "decisions": 0
+   },
+   {
+    "month": "2026-08",
+    "kept": 1,
+    "missed": 1,
+    "decisions": 1
+   },
+   {
+    "month": "2026-09",
+    "kept": 1,
+    "missed": 1,
+    "decisions": 1
+   },
+   {
+    "month": "2026-10",
+    "kept": 0,
+    "missed": 1,
+    "decisions": 1
+   },
+   {
+    "month": "2026-11",
+    "kept": 0,
+    "missed": 0,
+    "decisions": 0
+   }
+  ],
+  "owners": [
+   {
+    "name": "Aiko Tanaka",
+    "accountId": null,
+    "kept": 3,
+    "open": 1,
+    "missed": 0
+   },
+   {
+    "name": "Tom Becker",
+    "accountId": null,
+    "kept": 1,
+    "open": 0,
+    "missed": 3
+   },
+   {
+    "name": "Priya Raman",
+    "accountId": null,
+    "kept": 1,
+    "open": 1,
+    "missed": 0
+   },
+   {
+    "name": "Marcus Oyelaran",
+    "accountId": null,
+    "kept": 1,
+    "open": 0,
+    "missed": 1
+   },
+   {
+    "name": "Elena Sokolova",
+    "accountId": null,
+    "kept": 1,
+    "open": 0,
+    "missed": 0
+   }
+  ],
+  "tags": [
+   {
+    "tag": "kafka",
+    "count": 2
+   },
+   {
+    "tag": "dashboard",
+    "count": 2
+   },
+   {
+    "tag": "architecture",
+    "count": 2
+   },
+   {
+    "tag": "checkout",
+    "count": 2
+   },
+   {
+    "tag": "payments",
+    "count": 2
+   },
+   {
+    "tag": "fraud",
+    "count": 1
+   },
+   {
+    "tag": "ml",
+    "count": 1
+   },
+   {
+    "tag": "refunds",
+    "count": 1
+   },
+   {
+    "tag": "finance",
+    "count": 1
+   },
+   {
+    "tag": "controls",
+    "count": 1
+   },
+   {
+    "tag": "observability",
+    "count": 1
+   },
+   {
+    "tag": "tracing",
+    "count": 1
+   }
+  ],
+  "activity": [
+   {
+    "id": "dfbd6875-4e1f-4087-aedf-d5df060c77cc",
+    "at": "2026-11-16T04:26:17.265Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-36",
+    "entityType": "promise",
+    "entityId": "59de8074-ec97-4447-99f7-029d50266a43"
+   },
+   {
+    "id": "330592a1-adcf-47db-98dd-83bbf99fec5e",
+    "at": "2026-11-16T04:26:17.265Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-37",
+    "entityType": "promise",
+    "entityId": "9e92fff4-b2fe-49e8-ba1b-fd1ddba80735"
+   },
+   {
+    "id": "beb0cda8-bee4-45cb-b6ce-c6a1a8150660",
+    "at": "2026-11-16T04:26:17.265Z",
+    "kind": "created",
+    "detail": "Promise recorded from sample",
+    "entityKey": "PRM-38",
+    "entityType": "promise",
+    "entityId": "08588dd4-7f5b-4830-a14e-7d73faf74a3d"
+   },
+   {
+    "id": "f60c320a-ef1f-473f-bc68-60b38fbb3108",
+    "at": "2026-11-16T04:26:17.265Z",
+    "kind": "created",
+    "detail": "Promise recorded from sample",
+    "entityKey": "PRM-39",
+    "entityType": "promise",
+    "entityId": "02f31733-793e-4687-ac36-c25e08c13f3a"
+   },
+   {
+    "id": "5e6e4b3d-7b3c-4102-ac98-45b7b9be1e77",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-21",
+    "entityType": "promise",
+    "entityId": "cc62b850-8621-4e46-bced-ae8b4e685d53"
+   },
+   {
+    "id": "26ea863b-18fa-41c3-8f84-146068881603",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-22",
+    "entityType": "promise",
+    "entityId": "74bc8014-e8c8-4c80-be58-f1b1d6018336"
+   },
+   {
+    "id": "a4cdfd7a-2e08-41b7-86a8-46a7eda3948e",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-26",
+    "entityType": "promise",
+    "entityId": "fd178443-524f-4a7a-9387-668ea3332900"
+   },
+   {
+    "id": "b7fc5a62-164f-4b09-b32b-6ff0cc506096",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-27",
+    "entityType": "promise",
+    "entityId": "b2715b06-55d8-46ff-a0ec-73629ebe4491"
+   },
+   {
+    "id": "498c07cd-76b8-4689-af7e-8c7a48a4892d",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-29",
+    "entityType": "promise",
+    "entityId": "e5f5f116-7eac-49f3-a2b8-e0fbb70b64e1"
+   },
+   {
+    "id": "ac598ac6-6887-4954-90e4-124520f67e20",
+    "at": "2026-11-16T04:26:17.264Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-34",
+    "entityType": "promise",
+    "entityId": "8225c839-8bb4-4b01-81d8-bc01da7e8a74"
+   },
+   {
+    "id": "39f7b982-6ed6-43ed-a434-080ac1827449",
+    "at": "2026-11-16T04:26:17.263Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-31",
+    "entityType": "promise",
+    "entityId": "56e1aa36-fe29-498a-9d8f-446f8463b969"
+   },
+   {
+    "id": "235bc913-42dc-4928-bd80-db1dc9eebcda",
+    "at": "2026-11-16T04:26:17.263Z",
+    "kind": "created",
+    "detail": "Promise recorded from jsm_pir",
+    "entityKey": "PRM-32",
+    "entityType": "promise",
+    "entityId": "71bafb23-fcec-4a64-8bd1-03a424fe44de"
+   }
+  ],
+  "needsAttention": [
+   {
+    "id": "b2715b06-55d8-46ff-a0ec-73629ebe4491",
+    "key": "PRM-27",
+    "statement": "Add expiry alerts 30 days ahead for every production certificate.",
+    "originType": "jsm_pir",
+    "originId": "INC-201",
+    "ownerAccountId": null,
+    "ownerName": "Tom Becker",
+    "dueDate": "2026-07-01",
+    "linkedIssueKey": null,
+    "status": "overdue",
+    "sourceUrl": null,
+    "sourceSnippet": "Action item: Add expiry alerts 30 days ahead for every production certificate. Owner: Tom Becker. Due 2026-07-01.",
+    "scopeTags": [
+     "certificates",
+     "alerting"
+    ],
+    "createdAt": "2026-11-16T04:26:17.264Z",
+    "updatedAt": "2026-11-16T04:26:17.264Z"
+   },
+   {
+    "id": "71bafb23-fcec-4a64-8bd1-03a424fe44de",
+    "key": "PRM-32",
+    "statement": "Add an alert on checkout connection pool saturation above 80%.",
+    "originType": "jsm_pir",
+    "originId": "INC-214",
+    "ownerAccountId": null,
+    "ownerName": "Tom Becker",
+    "dueDate": "2026-08-08",
+    "linkedIssueKey": null,
+    "status": "broken",
+    "sourceUrl": null,
+    "sourceSnippet": "Action item: Add an alert on checkout connection pool saturation above 80%. Owner: Tom Becker. Due 2026-08-08.",
+    "scopeTags": [
+     "checkout",
+     "alerting",
+     "connection-pool"
+    ],
+    "createdAt": "2026-11-16T04:26:17.263Z",
+    "updatedAt": "2026-11-16T04:26:17.263Z"
+   },
+   {
+    "id": "a7b9921c-661e-40be-a004-f7eeffc7cfc7",
+    "key": "PRM-33",
+    "statement": "Run a load test of checkout against a slow acquirer before every peak season.",
+    "originType": "jsm_pir",
+    "originId": "INC-214",
+    "ownerAccountId": null,
+    "ownerName": "Marcus Oyelaran",
+    "dueDate": "2026-09-15",
+    "linkedIssueKey": null,
+    "status": "broken",
+    "sourceUrl": null,
+    "sourceSnippet": "Action item: Run a load test of checkout against a slow acquirer before every peak season. Owner: Marcus Oyelaran. Due 2026-09-15.",
+    "scopeTags": [
+     "checkout",
+     "load-test",
+     "acquirer"
+    ],
+    "createdAt": "2026-11-16T04:26:17.263Z",
+    "updatedAt": "2026-11-16T04:26:17.263Z"
+   },
+   {
+    "id": "02f31733-793e-4687-ac36-c25e08c13f3a",
+    "key": "PRM-39",
+    "statement": "Move the last two RabbitMQ queues to Kafka.",
+    "originType": "sample",
+    "originId": "sample:adr-011",
+    "ownerAccountId": null,
+    "ownerName": "Tom Becker",
+    "dueDate": "2026-10-15",
+    "linkedIssueKey": null,
+    "status": "overdue",
+    "sourceUrl": null,
+    "sourceSnippet": "Follow-up: Move the last two RabbitMQ queues to Kafka. Owner: Tom Becker. Due 2026-10-15.",
+    "scopeTags": [
+     "kafka",
+     "messaging"
+    ],
+    "createdAt": "2026-11-16T04:26:17.265Z",
+    "updatedAt": "2026-11-16T04:26:17.265Z"
+   }
+  ],
+  "hasSample": true,
+  "empty": false
+ },
+ "decisions": [
+  {
+   "id": "4e0c458d-d5cd-41c8-816e-5f73900a877c",
+   "key": "DEC-18",
+   "title": "Proposal: move fraud scoring to a streaming model",
+   "statement": "Fraud scoring would move from nightly batch to a streaming model on Kafka.",
+   "rationale": "Would cut chargebacks from same-day card testing attacks.",
+   "alternativesRejected": [],
+   "scopeTags": [
+    "fraud",
+    "kafka",
+    "ml"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Priya Raman",
+   "decidedAt": "2026-10-06",
+   "status": "proposed",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:fraud-notes",
+   "sourceUrl": null,
+   "sourceSnippet": "Proposal: we will move fraud scoring to a streaming model, pending a cost review.",
+   "contentHash": "222d9dece5e0ca81b368dc259452740672eb058c3815b230c7824b8e744c255a",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.262Z",
+   "updatedAt": "2026-11-16T04:26:17.262Z",
+   "restricted": false
+  },
+  {
+   "id": "574ba16a-f7ff-4e4d-997a-2a1afce1885e",
+   "key": "DEC-19",
+   "title": "Refunds over €5,000 need a second approver",
+   "statement": "Any refund above €5,000 requires approval from a second person in Finance Ops.",
+   "rationale": "Control requested by the auditors after the Q2 review.",
+   "alternativesRejected": [],
+   "scopeTags": [
+    "refunds",
+    "finance",
+    "controls"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Marcus Oyelaran",
+   "decidedAt": "2026-09-01",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:payments-notes",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided that refunds above €5,000 need a second approver from Finance Ops.",
+   "contentHash": "a7017e3433f787658c6921c6b6cb4e68866ede5ccd8d8a862cc3b57fd4ea34e8",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.262Z",
+   "updatedAt": "2026-11-16T04:26:17.262Z",
+   "restricted": false
+  },
+  {
+   "id": "777ddf78-841c-49a7-8b17-01744c8aa3a3",
+   "key": "DEC-17",
+   "title": "Adopt OpenTelemetry for tracing",
+   "statement": "New services emit traces with OpenTelemetry. Vendor-specific tracing agents will not be added.",
+   "rationale": "Avoids lock-in and lets SRE change backends.",
+   "alternativesRejected": [
+    "Vendor APM agents"
+   ],
+   "scopeTags": [
+    "observability",
+    "tracing",
+    "opentelemetry"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "decidedAt": "2026-08-11",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:sre-standards",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided to standardise on OpenTelemetry. No vendor-specific tracing agents in new services.",
+   "contentHash": "e38954ec03f97d31fb67143ecdb9468c59dce6a8f2c8d36077db3112e6ab81c0",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.262Z",
+   "updatedAt": "2026-11-16T04:26:17.262Z",
+   "restricted": false
+  },
+  {
+   "id": "88400739-e74d-4510-9fb6-8c02d18e234e",
+   "key": "DEC-16",
+   "title": "Mobile SDKs support the last two major OS versions",
+   "statement": "The iOS and Android SDKs support only the current and previous major OS version.",
+   "rationale": "Older versions are under 2% of payment volume.",
+   "alternativesRejected": [
+    "Supporting three major versions"
+   ],
+   "scopeTags": [
+    "mobile",
+    "sdk",
+    "ios",
+    "android"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Elena Sokolova",
+   "decidedAt": "2026-06-20",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:mobile-notes",
+   "sourceUrl": null,
+   "sourceSnippet": "We agreed to support only the last two major OS versions in the mobile SDKs.",
+   "contentHash": "4381443e82f531d8010e5a97dbebf5f25aaa2c5485894d9bea80902e87be7a1d",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.261Z",
+   "restricted": false
+  },
+  {
+   "id": "da1db876-88a5-430d-a8fd-a4ce85896d72",
+   "key": "DEC-15",
+   "title": "Feature flags are removed within 30 days of full rollout",
+   "statement": "A feature flag must be deleted within 30 days after it reaches 100% rollout.",
+   "rationale": "Stale flags caused the wrong fee table to load in May.",
+   "alternativesRejected": [],
+   "scopeTags": [
+    "feature-flags",
+    "hygiene"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "decidedAt": "2026-06-02",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:eng-guidelines",
+   "sourceUrl": null,
+   "sourceSnippet": "Going forward, we will remove every feature flag within 30 days of full rollout.",
+   "contentHash": "513f6c6df6f6bd9fc4d983928f7e9ff74322b1d76a105e7a952636b18d1b6560",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.261Z",
+   "restricted": false
+  },
+  {
+   "id": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+   "key": "DEC-14",
+   "title": "Extract reporting from the merchant dashboard",
+   "statement": "Reporting is extracted into its own service; the rest of the merchant dashboard stays in the Rails application.",
+   "rationale": "Report generation was starving the web workers at month end.",
+   "alternativesRejected": [
+    "Splitting the whole dashboard"
+   ],
+   "scopeTags": [
+    "dashboard",
+    "architecture",
+    "reporting"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Diego Fernández",
+   "decidedAt": "2026-05-14",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-014",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided to extract reporting into its own service. This supersedes ADR-005 for reporting only.",
+   "contentHash": "27f2ab162659a618376249e071bec93b31279668351a31c0c3863283bb70f7f9",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.261Z",
+   "restricted": false
+  },
+  {
+   "id": "153f57ae-5de7-470e-bcf9-ec93a7583944",
+   "key": "DEC-13",
+   "title": "Checkout calls to the acquirer have a 3 second timeout budget",
+   "statement": "Every call from checkout to an acquirer must have a 3 second timeout and at most one retry.",
+   "rationale": "Unbounded waits pile up connections and take down checkout for everyone.",
+   "alternativesRejected": [
+    "Per-acquirer custom timeouts set by hand"
+   ],
+   "scopeTags": [
+    "checkout",
+    "timeouts",
+    "acquirer",
+    "reliability"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "decidedAt": "2026-04-09",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-013",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided that all acquirer calls from checkout get a 3 second timeout budget with a single retry.",
+   "contentHash": "7ef1f5cf7c6e54b60cf1ad5e662d4c5ebb034e3a079e63cdc4414bed1f02eca2",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.261Z",
+   "restricted": false
+  },
+  {
+   "id": "da324565-2668-48c9-9f2f-e7fd19860ded",
+   "key": "DEC-12",
+   "title": "Keep authentication in-house; do not move to Firebase",
+   "statement": "We will not move customer authentication to Firebase Auth. Identity stays on our own auth service in the EU region.",
+   "rationale": "Data residency: our banking partners require EU customer identity data to stay in EU-controlled infrastructure, and Firebase Auth could not guarantee single-region storage for all identity metadata.",
+   "alternativesRejected": [
+    "Firebase Auth",
+    "Auth0 hosted in the US region"
+   ],
+   "scopeTags": [
+    "auth",
+    "firebase",
+    "identity",
+    "data-residency"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Priya Raman",
+   "decidedAt": "2026-03-12",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-012",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided NOT to move authentication to Firebase. EU customer identity data must stay in EU-controlled infrastructure.",
+   "contentHash": "30f6678c6fb6828c65e70bf02fe972374e900f570eee28ba25e9ed5604cfd056",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.256Z",
+   "updatedAt": "2026-11-16T04:26:17.256Z",
+   "restricted": false
+  },
+  {
+   "id": "0c3a0d9a-5c43-44dd-934f-ab5616ea7f56",
+   "key": "DEC-11",
+   "title": "Use Kafka for payment events",
+   "statement": "Payment events are published to Kafka. We will not add new RabbitMQ queues.",
+   "rationale": "One event backbone, replayable history for reconciliation.",
+   "alternativesRejected": [
+    "RabbitMQ",
+    "AWS SQS fan-out"
+   ],
+   "scopeTags": [
+    "events",
+    "kafka",
+    "messaging"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "decidedAt": "2026-02-27",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-011",
+   "sourceUrl": null,
+   "sourceSnippet": "We chose Kafka as the single event backbone. No new RabbitMQ queues will be added.",
+   "contentHash": "2b0dbbb1654ee391836a4462f452dd623750902acb366f5ee71a6d3489f758cc",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.260Z",
+   "updatedAt": "2026-11-16T04:26:17.260Z",
+   "restricted": false
+  },
+  {
+   "id": "98b40ffd-fd9a-4599-8d72-ed985ed9ad04",
+   "key": "DEC-10",
+   "title": "All payment API writes must be idempotent",
+   "statement": "Every write endpoint in the payments API must accept an Idempotency-Key header and be safe to retry.",
+   "rationale": "Double charges during retries were our most expensive class of bug in 2025.",
+   "alternativesRejected": [
+    "Client-side de-duplication only"
+   ],
+   "scopeTags": [
+    "payments",
+    "api",
+    "idempotency"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Marcus Oyelaran",
+   "decidedAt": "2026-02-18",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-010",
+   "sourceUrl": null,
+   "sourceSnippet": "Going forward, we will require an Idempotency-Key on every write endpoint in the payments API.",
+   "contentHash": "5c4d82bfcfca35e66cf3552e36723832a81771dfa8475f75526b85ae4b85de6a",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.260Z",
+   "updatedAt": "2026-11-16T04:26:17.260Z",
+   "restricted": false
+  },
+  {
+   "id": "19d08494-71d0-4214-b0f1-108fa4de5f42",
+   "key": "DEC-9",
+   "title": "Card data never touches our servers",
+   "statement": "We will not store or log raw card numbers (PAN). Card capture goes through the tokenisation vault only.",
+   "rationale": "Keeps most services out of PCI DSS scope.",
+   "alternativesRejected": [
+    "Encrypting PANs in our own database"
+   ],
+   "scopeTags": [
+    "pci",
+    "cards",
+    "security",
+    "checkout"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Elena Sokolova",
+   "decidedAt": "2026-02-03",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-009",
+   "sourceUrl": null,
+   "sourceSnippet": "We will never store or log raw card numbers. All card capture goes through the tokenisation vault.",
+   "contentHash": "c22a461d58d0fc360a12dddffddbfb94c87e17147a88cd613be0454133fc282f",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.260Z",
+   "updatedAt": "2026-11-16T04:26:17.260Z",
+   "restricted": false
+  },
+  {
+   "id": "86344910-5943-4650-891b-3418cca8230c",
+   "key": "DEC-7",
+   "title": "PostgreSQL is the system of record for the payments ledger",
+   "statement": "All money movement is recorded in PostgreSQL. We will not use DynamoDB or any eventually consistent store for the payments ledger.",
+   "rationale": "Double-entry bookkeeping needs serializable transactions and foreign keys.",
+   "alternativesRejected": [
+    "DynamoDB",
+    "MongoDB"
+   ],
+   "scopeTags": [
+    "payments",
+    "ledger",
+    "database",
+    "postgresql"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Marcus Oyelaran",
+   "decidedAt": "2026-01-20",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:adr-007",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided that PostgreSQL is the only system of record for money movement. DynamoDB was rejected for the ledger.",
+   "contentHash": "09adc1a63f4ffa0c84b0fe0ce21ae36f000694f9ca7fb041bab963245228ef08",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.259Z",
+   "updatedAt": "2026-11-16T04:26:17.259Z",
+   "restricted": false
+  },
+  {
+   "id": "c7d6d708-2ec2-4649-af38-651bf397c012",
+   "key": "DEC-5",
+   "title": "Monolith first for the merchant dashboard",
+   "statement": "The merchant dashboard stays a single Rails application. We will not split it into microservices this year.",
+   "rationale": "A team of six cannot operate ten services.",
+   "alternativesRejected": [
+    "Microservices per bounded context"
+   ],
+   "scopeTags": [
+    "dashboard",
+    "architecture",
+    "rails"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Diego Fernández",
+   "decidedAt": "2025-12-02",
+   "status": "superseded",
+   "supersededBy": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+   "sourceType": "sample",
+   "sourceId": "sample:adr-005",
+   "sourceUrl": null,
+   "sourceSnippet": "We decided to keep the merchant dashboard as one Rails application.",
+   "contentHash": "2345c277be31a237e2d7efeeb1139aa0b0e1744c313d6ef0702e82b307eb0581",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.262Z",
+   "restricted": false
+  },
+  {
+   "id": "a7f39ed9-99d4-441f-8135-3f2d257cc587",
+   "key": "DEC-4",
+   "title": "Deploy freezes on the last two business days of each month",
+   "statement": "We will not deploy to production on the last two business days of the month, except for incident fixes.",
+   "rationale": "Month-end settlement runs are the highest-risk window for merchants.",
+   "alternativesRejected": [],
+   "scopeTags": [
+    "release",
+    "deploy",
+    "settlement"
+   ],
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "decidedAt": "2025-11-05",
+   "status": "accepted",
+   "supersededBy": null,
+   "sourceType": "sample",
+   "sourceId": "sample:release-policy",
+   "sourceUrl": null,
+   "sourceSnippet": "The team agreed that there are no production deploys on the last two business days of each month.",
+   "contentHash": "be4425bae9ce91ce83a02276908edd873c01577b9022dfdb39992b7082da472e",
+   "confidence": 0.95,
+   "createdAt": "2026-11-16T04:26:17.261Z",
+   "updatedAt": "2026-11-16T04:26:17.261Z",
+   "restricted": false
+  }
+ ],
+ "details": {
+  "4e0c458d-d5cd-41c8-816e-5f73900a877c": {
+   "decision": {
+    "id": "4e0c458d-d5cd-41c8-816e-5f73900a877c",
+    "key": "DEC-18",
+    "title": "Proposal: move fraud scoring to a streaming model",
+    "statement": "Fraud scoring would move from nightly batch to a streaming model on Kafka.",
+    "rationale": "Would cut chargebacks from same-day card testing attacks.",
+    "alternativesRejected": [],
+    "scopeTags": [
+     "fraud",
+     "kafka",
+     "ml"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Priya Raman",
+    "decidedAt": "2026-10-06",
+    "status": "proposed",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:fraud-notes",
+    "sourceUrl": null,
+    "sourceSnippet": "Proposal: we will move fraud scoring to a streaming model, pending a cost review.",
+    "contentHash": "222d9dece5e0ca81b368dc259452740672eb058c3815b230c7824b8e744c255a",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.262Z",
+    "updatedAt": "2026-11-16T04:26:17.262Z"
+   },
+   "chain": [
+    {
+     "id": "4e0c458d-d5cd-41c8-816e-5f73900a877c",
+     "key": "DEC-18",
+     "title": "Proposal: move fraud scoring to a streaming model",
+     "statement": "Fraud scoring would move from nightly batch to a streaming model on Kafka.",
+     "rationale": "Would cut chargebacks from same-day card testing attacks.",
+     "alternativesRejected": [],
+     "scopeTags": [
+      "fraud",
+      "kafka",
+      "ml"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Priya Raman",
+     "decidedAt": "2026-10-06",
+     "status": "proposed",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:fraud-notes",
+     "sourceUrl": null,
+     "sourceSnippet": "Proposal: we will move fraud scoring to a streaming model, pending a cost review.",
+     "contentHash": "222d9dece5e0ca81b368dc259452740672eb058c3815b230c7824b8e744c255a",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.262Z",
+     "updatedAt": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "815d8efd-a6c6-432c-aae1-1ec2a2698ebd",
+     "entityId": "4e0c458d-d5cd-41c8-816e-5f73900a877c",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "574ba16a-f7ff-4e4d-997a-2a1afce1885e": {
+   "decision": {
+    "id": "574ba16a-f7ff-4e4d-997a-2a1afce1885e",
+    "key": "DEC-19",
+    "title": "Refunds over €5,000 need a second approver",
+    "statement": "Any refund above €5,000 requires approval from a second person in Finance Ops.",
+    "rationale": "Control requested by the auditors after the Q2 review.",
+    "alternativesRejected": [],
+    "scopeTags": [
+     "refunds",
+     "finance",
+     "controls"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Marcus Oyelaran",
+    "decidedAt": "2026-09-01",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:payments-notes",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided that refunds above €5,000 need a second approver from Finance Ops.",
+    "contentHash": "a7017e3433f787658c6921c6b6cb4e68866ede5ccd8d8a862cc3b57fd4ea34e8",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.262Z",
+    "updatedAt": "2026-11-16T04:26:17.262Z"
+   },
+   "chain": [
+    {
+     "id": "574ba16a-f7ff-4e4d-997a-2a1afce1885e",
+     "key": "DEC-19",
+     "title": "Refunds over €5,000 need a second approver",
+     "statement": "Any refund above €5,000 requires approval from a second person in Finance Ops.",
+     "rationale": "Control requested by the auditors after the Q2 review.",
+     "alternativesRejected": [],
+     "scopeTags": [
+      "refunds",
+      "finance",
+      "controls"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Marcus Oyelaran",
+     "decidedAt": "2026-09-01",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:payments-notes",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided that refunds above €5,000 need a second approver from Finance Ops.",
+     "contentHash": "a7017e3433f787658c6921c6b6cb4e68866ede5ccd8d8a862cc3b57fd4ea34e8",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.262Z",
+     "updatedAt": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "98d528a9-c6dc-4325-8d10-641547f293b8",
+     "entityId": "574ba16a-f7ff-4e4d-997a-2a1afce1885e",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "777ddf78-841c-49a7-8b17-01744c8aa3a3": {
+   "decision": {
+    "id": "777ddf78-841c-49a7-8b17-01744c8aa3a3",
+    "key": "DEC-17",
+    "title": "Adopt OpenTelemetry for tracing",
+    "statement": "New services emit traces with OpenTelemetry. Vendor-specific tracing agents will not be added.",
+    "rationale": "Avoids lock-in and lets SRE change backends.",
+    "alternativesRejected": [
+     "Vendor APM agents"
+    ],
+    "scopeTags": [
+     "observability",
+     "tracing",
+     "opentelemetry"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Aiko Tanaka",
+    "decidedAt": "2026-08-11",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:sre-standards",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided to standardise on OpenTelemetry. No vendor-specific tracing agents in new services.",
+    "contentHash": "e38954ec03f97d31fb67143ecdb9468c59dce6a8f2c8d36077db3112e6ab81c0",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.262Z",
+    "updatedAt": "2026-11-16T04:26:17.262Z"
+   },
+   "chain": [
+    {
+     "id": "777ddf78-841c-49a7-8b17-01744c8aa3a3",
+     "key": "DEC-17",
+     "title": "Adopt OpenTelemetry for tracing",
+     "statement": "New services emit traces with OpenTelemetry. Vendor-specific tracing agents will not be added.",
+     "rationale": "Avoids lock-in and lets SRE change backends.",
+     "alternativesRejected": [
+      "Vendor APM agents"
+     ],
+     "scopeTags": [
+      "observability",
+      "tracing",
+      "opentelemetry"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "decidedAt": "2026-08-11",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:sre-standards",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided to standardise on OpenTelemetry. No vendor-specific tracing agents in new services.",
+     "contentHash": "e38954ec03f97d31fb67143ecdb9468c59dce6a8f2c8d36077db3112e6ab81c0",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.262Z",
+     "updatedAt": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "f6b748ce-13c5-4763-9a1d-6064dbb759a5",
+     "entityId": "777ddf78-841c-49a7-8b17-01744c8aa3a3",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "88400739-e74d-4510-9fb6-8c02d18e234e": {
+   "decision": {
+    "id": "88400739-e74d-4510-9fb6-8c02d18e234e",
+    "key": "DEC-16",
+    "title": "Mobile SDKs support the last two major OS versions",
+    "statement": "The iOS and Android SDKs support only the current and previous major OS version.",
+    "rationale": "Older versions are under 2% of payment volume.",
+    "alternativesRejected": [
+     "Supporting three major versions"
+    ],
+    "scopeTags": [
+     "mobile",
+     "sdk",
+     "ios",
+     "android"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Elena Sokolova",
+    "decidedAt": "2026-06-20",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:mobile-notes",
+    "sourceUrl": null,
+    "sourceSnippet": "We agreed to support only the last two major OS versions in the mobile SDKs.",
+    "contentHash": "4381443e82f531d8010e5a97dbebf5f25aaa2c5485894d9bea80902e87be7a1d",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.261Z"
+   },
+   "chain": [
+    {
+     "id": "88400739-e74d-4510-9fb6-8c02d18e234e",
+     "key": "DEC-16",
+     "title": "Mobile SDKs support the last two major OS versions",
+     "statement": "The iOS and Android SDKs support only the current and previous major OS version.",
+     "rationale": "Older versions are under 2% of payment volume.",
+     "alternativesRejected": [
+      "Supporting three major versions"
+     ],
+     "scopeTags": [
+      "mobile",
+      "sdk",
+      "ios",
+      "android"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Elena Sokolova",
+     "decidedAt": "2026-06-20",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:mobile-notes",
+     "sourceUrl": null,
+     "sourceSnippet": "We agreed to support only the last two major OS versions in the mobile SDKs.",
+     "contentHash": "4381443e82f531d8010e5a97dbebf5f25aaa2c5485894d9bea80902e87be7a1d",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "2415622b-a468-4559-953c-6169c37680df",
+     "entityId": "88400739-e74d-4510-9fb6-8c02d18e234e",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "da1db876-88a5-430d-a8fd-a4ce85896d72": {
+   "decision": {
+    "id": "da1db876-88a5-430d-a8fd-a4ce85896d72",
+    "key": "DEC-15",
+    "title": "Feature flags are removed within 30 days of full rollout",
+    "statement": "A feature flag must be deleted within 30 days after it reaches 100% rollout.",
+    "rationale": "Stale flags caused the wrong fee table to load in May.",
+    "alternativesRejected": [],
+    "scopeTags": [
+     "feature-flags",
+     "hygiene"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Tom Becker",
+    "decidedAt": "2026-06-02",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:eng-guidelines",
+    "sourceUrl": null,
+    "sourceSnippet": "Going forward, we will remove every feature flag within 30 days of full rollout.",
+    "contentHash": "513f6c6df6f6bd9fc4d983928f7e9ff74322b1d76a105e7a952636b18d1b6560",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.261Z"
+   },
+   "chain": [
+    {
+     "id": "da1db876-88a5-430d-a8fd-a4ce85896d72",
+     "key": "DEC-15",
+     "title": "Feature flags are removed within 30 days of full rollout",
+     "statement": "A feature flag must be deleted within 30 days after it reaches 100% rollout.",
+     "rationale": "Stale flags caused the wrong fee table to load in May.",
+     "alternativesRejected": [],
+     "scopeTags": [
+      "feature-flags",
+      "hygiene"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "decidedAt": "2026-06-02",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:eng-guidelines",
+     "sourceUrl": null,
+     "sourceSnippet": "Going forward, we will remove every feature flag within 30 days of full rollout.",
+     "contentHash": "513f6c6df6f6bd9fc4d983928f7e9ff74322b1d76a105e7a952636b18d1b6560",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "04325869-34f4-454a-bf5d-41027e1f59d0",
+     "entityId": "da1db876-88a5-430d-a8fd-a4ce85896d72",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "restricted": false
+  },
+  "394314a9-c14d-4333-b4ab-1c6dd63ac0da": {
+   "decision": {
+    "id": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+    "key": "DEC-14",
+    "title": "Extract reporting from the merchant dashboard",
+    "statement": "Reporting is extracted into its own service; the rest of the merchant dashboard stays in the Rails application.",
+    "rationale": "Report generation was starving the web workers at month end.",
+    "alternativesRejected": [
+     "Splitting the whole dashboard"
+    ],
+    "scopeTags": [
+     "dashboard",
+     "architecture",
+     "reporting"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Diego Fernández",
+    "decidedAt": "2026-05-14",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-014",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided to extract reporting into its own service. This supersedes ADR-005 for reporting only.",
+    "contentHash": "27f2ab162659a618376249e071bec93b31279668351a31c0c3863283bb70f7f9",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.261Z"
+   },
+   "chain": [
+    {
+     "id": "c7d6d708-2ec2-4649-af38-651bf397c012",
+     "key": "DEC-5",
+     "title": "Monolith first for the merchant dashboard",
+     "statement": "The merchant dashboard stays a single Rails application. We will not split it into microservices this year.",
+     "rationale": "A team of six cannot operate ten services.",
+     "alternativesRejected": [
+      "Microservices per bounded context"
+     ],
+     "scopeTags": [
+      "dashboard",
+      "architecture",
+      "rails"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Diego Fernández",
+     "decidedAt": "2025-12-02",
+     "status": "superseded",
+     "supersededBy": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "sourceType": "sample",
+     "sourceId": "sample:adr-005",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided to keep the merchant dashboard as one Rails application.",
+     "contentHash": "2345c277be31a237e2d7efeeb1139aa0b0e1744c313d6ef0702e82b307eb0581",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.262Z"
+    },
+    {
+     "id": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "key": "DEC-14",
+     "title": "Extract reporting from the merchant dashboard",
+     "statement": "Reporting is extracted into its own service; the rest of the merchant dashboard stays in the Rails application.",
+     "rationale": "Report generation was starving the web workers at month end.",
+     "alternativesRejected": [
+      "Splitting the whole dashboard"
+     ],
+     "scopeTags": [
+      "dashboard",
+      "architecture",
+      "reporting"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Diego Fernández",
+     "decidedAt": "2026-05-14",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-014",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided to extract reporting into its own service. This supersedes ADR-005 for reporting only.",
+     "contentHash": "27f2ab162659a618376249e071bec93b31279668351a31c0c3863283bb70f7f9",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "93fc05af-63ee-45a5-a2b9-725ccca58239",
+     "entityId": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    },
+    {
+     "id": "0a9572fe-62f5-4590-9603-a077cba9ed8f",
+     "entityId": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "kind": "supersedes",
+     "actorAccountId": null,
+     "detail": "Supersedes DEC-5: Reporting was starving web workers at month end",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "153f57ae-5de7-470e-bcf9-ec93a7583944": {
+   "decision": {
+    "id": "153f57ae-5de7-470e-bcf9-ec93a7583944",
+    "key": "DEC-13",
+    "title": "Checkout calls to the acquirer have a 3 second timeout budget",
+    "statement": "Every call from checkout to an acquirer must have a 3 second timeout and at most one retry.",
+    "rationale": "Unbounded waits pile up connections and take down checkout for everyone.",
+    "alternativesRejected": [
+     "Per-acquirer custom timeouts set by hand"
+    ],
+    "scopeTags": [
+     "checkout",
+     "timeouts",
+     "acquirer",
+     "reliability"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Aiko Tanaka",
+    "decidedAt": "2026-04-09",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-013",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided that all acquirer calls from checkout get a 3 second timeout budget with a single retry.",
+    "contentHash": "7ef1f5cf7c6e54b60cf1ad5e662d4c5ebb034e3a079e63cdc4414bed1f02eca2",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.261Z"
+   },
+   "chain": [
+    {
+     "id": "153f57ae-5de7-470e-bcf9-ec93a7583944",
+     "key": "DEC-13",
+     "title": "Checkout calls to the acquirer have a 3 second timeout budget",
+     "statement": "Every call from checkout to an acquirer must have a 3 second timeout and at most one retry.",
+     "rationale": "Unbounded waits pile up connections and take down checkout for everyone.",
+     "alternativesRejected": [
+      "Per-acquirer custom timeouts set by hand"
+     ],
+     "scopeTags": [
+      "checkout",
+      "timeouts",
+      "acquirer",
+      "reliability"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "decidedAt": "2026-04-09",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-013",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided that all acquirer calls from checkout get a 3 second timeout budget with a single retry.",
+     "contentHash": "7ef1f5cf7c6e54b60cf1ad5e662d4c5ebb034e3a079e63cdc4414bed1f02eca2",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "be396d5c-e587-4fc3-8d66-6ca05b611b8e",
+     "entityId": "153f57ae-5de7-470e-bcf9-ec93a7583944",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "restricted": false
+  },
+  "da324565-2668-48c9-9f2f-e7fd19860ded": {
+   "decision": {
+    "id": "da324565-2668-48c9-9f2f-e7fd19860ded",
+    "key": "DEC-12",
+    "title": "Keep authentication in-house; do not move to Firebase",
+    "statement": "We will not move customer authentication to Firebase Auth. Identity stays on our own auth service in the EU region.",
+    "rationale": "Data residency: our banking partners require EU customer identity data to stay in EU-controlled infrastructure, and Firebase Auth could not guarantee single-region storage for all identity metadata.",
+    "alternativesRejected": [
+     "Firebase Auth",
+     "Auth0 hosted in the US region"
+    ],
+    "scopeTags": [
+     "auth",
+     "firebase",
+     "identity",
+     "data-residency"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Priya Raman",
+    "decidedAt": "2026-03-12",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-012",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided NOT to move authentication to Firebase. EU customer identity data must stay in EU-controlled infrastructure.",
+    "contentHash": "30f6678c6fb6828c65e70bf02fe972374e900f570eee28ba25e9ed5604cfd056",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.256Z",
+    "updatedAt": "2026-11-16T04:26:17.256Z"
+   },
+   "chain": [
+    {
+     "id": "da324565-2668-48c9-9f2f-e7fd19860ded",
+     "key": "DEC-12",
+     "title": "Keep authentication in-house; do not move to Firebase",
+     "statement": "We will not move customer authentication to Firebase Auth. Identity stays on our own auth service in the EU region.",
+     "rationale": "Data residency: our banking partners require EU customer identity data to stay in EU-controlled infrastructure, and Firebase Auth could not guarantee single-region storage for all identity metadata.",
+     "alternativesRejected": [
+      "Firebase Auth",
+      "Auth0 hosted in the US region"
+     ],
+     "scopeTags": [
+      "auth",
+      "firebase",
+      "identity",
+      "data-residency"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Priya Raman",
+     "decidedAt": "2026-03-12",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-012",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided NOT to move authentication to Firebase. EU customer identity data must stay in EU-controlled infrastructure.",
+     "contentHash": "30f6678c6fb6828c65e70bf02fe972374e900f570eee28ba25e9ed5604cfd056",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.256Z",
+     "updatedAt": "2026-11-16T04:26:17.256Z"
+    }
+   ],
+   "flaggedWork": [
+    {
+     "workItemKey": "PAY-482",
+     "kind": "conflict",
+     "confidence": 0.8799999999999999,
+     "explanation": "This work proposes something the team decided against: \"We will not move customer authentication to Firebase Auth.\"",
+     "dismissed": false
+    }
+   ],
+   "promises": [
+    {
+     "id": "08588dd4-7f5b-4830-a14e-7d73faf74a3d",
+     "key": "PRM-38",
+     "statement": "Publish the data residency map for all customer identity fields.",
+     "originType": "sample",
+     "originId": "sample:adr-012",
+     "ownerAccountId": null,
+     "ownerName": "Priya Raman",
+     "dueDate": "2026-12-01",
+     "linkedIssueKey": null,
+     "status": "open",
+     "sourceUrl": null,
+     "sourceSnippet": "Follow-up: Publish the data residency map for all customer identity fields. Owner: Priya Raman. Due 2026-12-01.",
+     "scopeTags": [
+      "auth",
+      "data-residency"
+     ],
+     "createdAt": "2026-11-16T04:26:17.265Z",
+     "updatedAt": "2026-11-16T04:26:17.265Z"
+    }
+   ],
+   "history": [
+    {
+     "id": "b891e221-6e65-41f2-9875-e1f7d691ae57",
+     "entityId": "da324565-2668-48c9-9f2f-e7fd19860ded",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.259Z"
+    }
+   ],
+   "restricted": false
+  },
+  "0c3a0d9a-5c43-44dd-934f-ab5616ea7f56": {
+   "decision": {
+    "id": "0c3a0d9a-5c43-44dd-934f-ab5616ea7f56",
+    "key": "DEC-11",
+    "title": "Use Kafka for payment events",
+    "statement": "Payment events are published to Kafka. We will not add new RabbitMQ queues.",
+    "rationale": "One event backbone, replayable history for reconciliation.",
+    "alternativesRejected": [
+     "RabbitMQ",
+     "AWS SQS fan-out"
+    ],
+    "scopeTags": [
+     "events",
+     "kafka",
+     "messaging"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Tom Becker",
+    "decidedAt": "2026-02-27",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-011",
+    "sourceUrl": null,
+    "sourceSnippet": "We chose Kafka as the single event backbone. No new RabbitMQ queues will be added.",
+    "contentHash": "2b0dbbb1654ee391836a4462f452dd623750902acb366f5ee71a6d3489f758cc",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.260Z",
+    "updatedAt": "2026-11-16T04:26:17.260Z"
+   },
+   "chain": [
+    {
+     "id": "0c3a0d9a-5c43-44dd-934f-ab5616ea7f56",
+     "key": "DEC-11",
+     "title": "Use Kafka for payment events",
+     "statement": "Payment events are published to Kafka. We will not add new RabbitMQ queues.",
+     "rationale": "One event backbone, replayable history for reconciliation.",
+     "alternativesRejected": [
+      "RabbitMQ",
+      "AWS SQS fan-out"
+     ],
+     "scopeTags": [
+      "events",
+      "kafka",
+      "messaging"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "decidedAt": "2026-02-27",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-011",
+     "sourceUrl": null,
+     "sourceSnippet": "We chose Kafka as the single event backbone. No new RabbitMQ queues will be added.",
+     "contentHash": "2b0dbbb1654ee391836a4462f452dd623750902acb366f5ee71a6d3489f758cc",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.260Z",
+     "updatedAt": "2026-11-16T04:26:17.260Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [
+    {
+     "id": "02f31733-793e-4687-ac36-c25e08c13f3a",
+     "key": "PRM-39",
+     "statement": "Move the last two RabbitMQ queues to Kafka.",
+     "originType": "sample",
+     "originId": "sample:adr-011",
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "dueDate": "2026-10-15",
+     "linkedIssueKey": null,
+     "status": "overdue",
+     "sourceUrl": null,
+     "sourceSnippet": "Follow-up: Move the last two RabbitMQ queues to Kafka. Owner: Tom Becker. Due 2026-10-15.",
+     "scopeTags": [
+      "kafka",
+      "messaging"
+     ],
+     "createdAt": "2026-11-16T04:26:17.265Z",
+     "updatedAt": "2026-11-16T04:26:17.265Z"
+    }
+   ],
+   "history": [
+    {
+     "id": "4138e20d-8968-48f3-8d1f-446fb4573417",
+     "entityId": "0c3a0d9a-5c43-44dd-934f-ab5616ea7f56",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "restricted": false
+  },
+  "98b40ffd-fd9a-4599-8d72-ed985ed9ad04": {
+   "decision": {
+    "id": "98b40ffd-fd9a-4599-8d72-ed985ed9ad04",
+    "key": "DEC-10",
+    "title": "All payment API writes must be idempotent",
+    "statement": "Every write endpoint in the payments API must accept an Idempotency-Key header and be safe to retry.",
+    "rationale": "Double charges during retries were our most expensive class of bug in 2025.",
+    "alternativesRejected": [
+     "Client-side de-duplication only"
+    ],
+    "scopeTags": [
+     "payments",
+     "api",
+     "idempotency"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Marcus Oyelaran",
+    "decidedAt": "2026-02-18",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-010",
+    "sourceUrl": null,
+    "sourceSnippet": "Going forward, we will require an Idempotency-Key on every write endpoint in the payments API.",
+    "contentHash": "5c4d82bfcfca35e66cf3552e36723832a81771dfa8475f75526b85ae4b85de6a",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.260Z",
+    "updatedAt": "2026-11-16T04:26:17.260Z"
+   },
+   "chain": [
+    {
+     "id": "98b40ffd-fd9a-4599-8d72-ed985ed9ad04",
+     "key": "DEC-10",
+     "title": "All payment API writes must be idempotent",
+     "statement": "Every write endpoint in the payments API must accept an Idempotency-Key header and be safe to retry.",
+     "rationale": "Double charges during retries were our most expensive class of bug in 2025.",
+     "alternativesRejected": [
+      "Client-side de-duplication only"
+     ],
+     "scopeTags": [
+      "payments",
+      "api",
+      "idempotency"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Marcus Oyelaran",
+     "decidedAt": "2026-02-18",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-010",
+     "sourceUrl": null,
+     "sourceSnippet": "Going forward, we will require an Idempotency-Key on every write endpoint in the payments API.",
+     "contentHash": "5c4d82bfcfca35e66cf3552e36723832a81771dfa8475f75526b85ae4b85de6a",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.260Z",
+     "updatedAt": "2026-11-16T04:26:17.260Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "4ef65511-5c3a-46c4-a65f-881894a4a381",
+     "entityId": "98b40ffd-fd9a-4599-8d72-ed985ed9ad04",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.260Z"
+    }
+   ],
+   "restricted": false
+  },
+  "19d08494-71d0-4214-b0f1-108fa4de5f42": {
+   "decision": {
+    "id": "19d08494-71d0-4214-b0f1-108fa4de5f42",
+    "key": "DEC-9",
+    "title": "Card data never touches our servers",
+    "statement": "We will not store or log raw card numbers (PAN). Card capture goes through the tokenisation vault only.",
+    "rationale": "Keeps most services out of PCI DSS scope.",
+    "alternativesRejected": [
+     "Encrypting PANs in our own database"
+    ],
+    "scopeTags": [
+     "pci",
+     "cards",
+     "security",
+     "checkout"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Elena Sokolova",
+    "decidedAt": "2026-02-03",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-009",
+    "sourceUrl": null,
+    "sourceSnippet": "We will never store or log raw card numbers. All card capture goes through the tokenisation vault.",
+    "contentHash": "c22a461d58d0fc360a12dddffddbfb94c87e17147a88cd613be0454133fc282f",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.260Z",
+    "updatedAt": "2026-11-16T04:26:17.260Z"
+   },
+   "chain": [
+    {
+     "id": "19d08494-71d0-4214-b0f1-108fa4de5f42",
+     "key": "DEC-9",
+     "title": "Card data never touches our servers",
+     "statement": "We will not store or log raw card numbers (PAN). Card capture goes through the tokenisation vault only.",
+     "rationale": "Keeps most services out of PCI DSS scope.",
+     "alternativesRejected": [
+      "Encrypting PANs in our own database"
+     ],
+     "scopeTags": [
+      "pci",
+      "cards",
+      "security",
+      "checkout"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Elena Sokolova",
+     "decidedAt": "2026-02-03",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-009",
+     "sourceUrl": null,
+     "sourceSnippet": "We will never store or log raw card numbers. All card capture goes through the tokenisation vault.",
+     "contentHash": "c22a461d58d0fc360a12dddffddbfb94c87e17147a88cd613be0454133fc282f",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.260Z",
+     "updatedAt": "2026-11-16T04:26:17.260Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "60d06ab4-edc9-4c23-bd70-3bf4e98ca236",
+     "entityId": "19d08494-71d0-4214-b0f1-108fa4de5f42",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.260Z"
+    }
+   ],
+   "restricted": false
+  },
+  "86344910-5943-4650-891b-3418cca8230c": {
+   "decision": {
+    "id": "86344910-5943-4650-891b-3418cca8230c",
+    "key": "DEC-7",
+    "title": "PostgreSQL is the system of record for the payments ledger",
+    "statement": "All money movement is recorded in PostgreSQL. We will not use DynamoDB or any eventually consistent store for the payments ledger.",
+    "rationale": "Double-entry bookkeeping needs serializable transactions and foreign keys.",
+    "alternativesRejected": [
+     "DynamoDB",
+     "MongoDB"
+    ],
+    "scopeTags": [
+     "payments",
+     "ledger",
+     "database",
+     "postgresql"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Marcus Oyelaran",
+    "decidedAt": "2026-01-20",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:adr-007",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided that PostgreSQL is the only system of record for money movement. DynamoDB was rejected for the ledger.",
+    "contentHash": "09adc1a63f4ffa0c84b0fe0ce21ae36f000694f9ca7fb041bab963245228ef08",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.259Z",
+    "updatedAt": "2026-11-16T04:26:17.259Z"
+   },
+   "chain": [
+    {
+     "id": "86344910-5943-4650-891b-3418cca8230c",
+     "key": "DEC-7",
+     "title": "PostgreSQL is the system of record for the payments ledger",
+     "statement": "All money movement is recorded in PostgreSQL. We will not use DynamoDB or any eventually consistent store for the payments ledger.",
+     "rationale": "Double-entry bookkeeping needs serializable transactions and foreign keys.",
+     "alternativesRejected": [
+      "DynamoDB",
+      "MongoDB"
+     ],
+     "scopeTags": [
+      "payments",
+      "ledger",
+      "database",
+      "postgresql"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Marcus Oyelaran",
+     "decidedAt": "2026-01-20",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-007",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided that PostgreSQL is the only system of record for money movement. DynamoDB was rejected for the ledger.",
+     "contentHash": "09adc1a63f4ffa0c84b0fe0ce21ae36f000694f9ca7fb041bab963245228ef08",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.259Z",
+     "updatedAt": "2026-11-16T04:26:17.259Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "af89f611-161c-4522-b551-0224487776de",
+     "entityId": "86344910-5943-4650-891b-3418cca8230c",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.259Z"
+    }
+   ],
+   "restricted": false
+  },
+  "c7d6d708-2ec2-4649-af38-651bf397c012": {
+   "decision": {
+    "id": "c7d6d708-2ec2-4649-af38-651bf397c012",
+    "key": "DEC-5",
+    "title": "Monolith first for the merchant dashboard",
+    "statement": "The merchant dashboard stays a single Rails application. We will not split it into microservices this year.",
+    "rationale": "A team of six cannot operate ten services.",
+    "alternativesRejected": [
+     "Microservices per bounded context"
+    ],
+    "scopeTags": [
+     "dashboard",
+     "architecture",
+     "rails"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Diego Fernández",
+    "decidedAt": "2025-12-02",
+    "status": "superseded",
+    "supersededBy": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+    "sourceType": "sample",
+    "sourceId": "sample:adr-005",
+    "sourceUrl": null,
+    "sourceSnippet": "We decided to keep the merchant dashboard as one Rails application.",
+    "contentHash": "2345c277be31a237e2d7efeeb1139aa0b0e1744c313d6ef0702e82b307eb0581",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.262Z"
+   },
+   "chain": [
+    {
+     "id": "c7d6d708-2ec2-4649-af38-651bf397c012",
+     "key": "DEC-5",
+     "title": "Monolith first for the merchant dashboard",
+     "statement": "The merchant dashboard stays a single Rails application. We will not split it into microservices this year.",
+     "rationale": "A team of six cannot operate ten services.",
+     "alternativesRejected": [
+      "Microservices per bounded context"
+     ],
+     "scopeTags": [
+      "dashboard",
+      "architecture",
+      "rails"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Diego Fernández",
+     "decidedAt": "2025-12-02",
+     "status": "superseded",
+     "supersededBy": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "sourceType": "sample",
+     "sourceId": "sample:adr-005",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided to keep the merchant dashboard as one Rails application.",
+     "contentHash": "2345c277be31a237e2d7efeeb1139aa0b0e1744c313d6ef0702e82b307eb0581",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.262Z"
+    },
+    {
+     "id": "394314a9-c14d-4333-b4ab-1c6dd63ac0da",
+     "key": "DEC-14",
+     "title": "Extract reporting from the merchant dashboard",
+     "statement": "Reporting is extracted into its own service; the rest of the merchant dashboard stays in the Rails application.",
+     "rationale": "Report generation was starving the web workers at month end.",
+     "alternativesRejected": [
+      "Splitting the whole dashboard"
+     ],
+     "scopeTags": [
+      "dashboard",
+      "architecture",
+      "reporting"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Diego Fernández",
+     "decidedAt": "2026-05-14",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:adr-014",
+     "sourceUrl": null,
+     "sourceSnippet": "We decided to extract reporting into its own service. This supersedes ADR-005 for reporting only.",
+     "contentHash": "27f2ab162659a618376249e071bec93b31279668351a31c0c3863283bb70f7f9",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "c2c69262-7f9f-4cb3-b809-7df149252ac3",
+     "entityId": "c7d6d708-2ec2-4649-af38-651bf397c012",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    },
+    {
+     "id": "5d928e27-4aea-4dea-91bf-9e1916c18dc3",
+     "entityId": "c7d6d708-2ec2-4649-af38-651bf397c012",
+     "kind": "superseded",
+     "actorAccountId": null,
+     "detail": "Superseded by DEC-14: Reporting was starving web workers at month end",
+     "at": "2026-11-16T04:26:17.262Z"
+    }
+   ],
+   "restricted": false
+  },
+  "a7f39ed9-99d4-441f-8135-3f2d257cc587": {
+   "decision": {
+    "id": "a7f39ed9-99d4-441f-8135-3f2d257cc587",
+    "key": "DEC-4",
+    "title": "Deploy freezes on the last two business days of each month",
+    "statement": "We will not deploy to production on the last two business days of the month, except for incident fixes.",
+    "rationale": "Month-end settlement runs are the highest-risk window for merchants.",
+    "alternativesRejected": [],
+    "scopeTags": [
+     "release",
+     "deploy",
+     "settlement"
+    ],
+    "ownerAccountId": null,
+    "ownerName": "Aiko Tanaka",
+    "decidedAt": "2025-11-05",
+    "status": "accepted",
+    "supersededBy": null,
+    "sourceType": "sample",
+    "sourceId": "sample:release-policy",
+    "sourceUrl": null,
+    "sourceSnippet": "The team agreed that there are no production deploys on the last two business days of each month.",
+    "contentHash": "be4425bae9ce91ce83a02276908edd873c01577b9022dfdb39992b7082da472e",
+    "confidence": 0.95,
+    "createdAt": "2026-11-16T04:26:17.261Z",
+    "updatedAt": "2026-11-16T04:26:17.261Z"
+   },
+   "chain": [
+    {
+     "id": "a7f39ed9-99d4-441f-8135-3f2d257cc587",
+     "key": "DEC-4",
+     "title": "Deploy freezes on the last two business days of each month",
+     "statement": "We will not deploy to production on the last two business days of the month, except for incident fixes.",
+     "rationale": "Month-end settlement runs are the highest-risk window for merchants.",
+     "alternativesRejected": [],
+     "scopeTags": [
+      "release",
+      "deploy",
+      "settlement"
+     ],
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "decidedAt": "2025-11-05",
+     "status": "accepted",
+     "supersededBy": null,
+     "sourceType": "sample",
+     "sourceId": "sample:release-policy",
+     "sourceUrl": null,
+     "sourceSnippet": "The team agreed that there are no production deploys on the last two business days of each month.",
+     "contentHash": "be4425bae9ce91ce83a02276908edd873c01577b9022dfdb39992b7082da472e",
+     "confidence": 0.95,
+     "createdAt": "2026-11-16T04:26:17.261Z",
+     "updatedAt": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "flaggedWork": [],
+   "promises": [],
+   "history": [
+    {
+     "id": "81485224-0106-4d47-b137-6dddaa1c07ae",
+     "entityId": "a7f39ed9-99d4-441f-8135-3f2d257cc587",
+     "kind": "created",
+     "actorAccountId": null,
+     "detail": "Extracted from sample",
+     "at": "2026-11-16T04:26:17.261Z"
+    }
+   ],
+   "restricted": false
+  }
+ },
+ "promises": [
+  {
+   "id": "9e92fff4-b2fe-49e8-ba1b-fd1ddba80735",
+   "key": "PRM-37",
+   "statement": "Run a failover drill every quarter.",
+   "originType": "jsm_pir",
+   "originId": "INC-222",
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "dueDate": "2026-12-15",
+   "linkedIssueKey": null,
+   "status": "open",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Run a failover drill every quarter. Owner: Aiko Tanaka. Due 2026-12-15.",
+   "scopeTags": [
+    "database",
+    "failover"
+   ],
+   "createdAt": "2026-11-16T04:26:17.265Z",
+   "updatedAt": "2026-11-16T04:26:17.265Z"
+  },
+  {
+   "id": "08588dd4-7f5b-4830-a14e-7d73faf74a3d",
+   "key": "PRM-38",
+   "statement": "Publish the data residency map for all customer identity fields.",
+   "originType": "sample",
+   "originId": "sample:adr-012",
+   "ownerAccountId": null,
+   "ownerName": "Priya Raman",
+   "dueDate": "2026-12-01",
+   "linkedIssueKey": null,
+   "status": "open",
+   "sourceUrl": null,
+   "sourceSnippet": "Follow-up: Publish the data residency map for all customer identity fields. Owner: Priya Raman. Due 2026-12-01.",
+   "scopeTags": [
+    "auth",
+    "data-residency"
+   ],
+   "createdAt": "2026-11-16T04:26:17.265Z",
+   "updatedAt": "2026-11-16T04:26:17.265Z"
+  },
+  {
+   "id": "02f31733-793e-4687-ac36-c25e08c13f3a",
+   "key": "PRM-39",
+   "statement": "Move the last two RabbitMQ queues to Kafka.",
+   "originType": "sample",
+   "originId": "sample:adr-011",
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "dueDate": "2026-10-15",
+   "linkedIssueKey": null,
+   "status": "overdue",
+   "sourceUrl": null,
+   "sourceSnippet": "Follow-up: Move the last two RabbitMQ queues to Kafka. Owner: Tom Becker. Due 2026-10-15.",
+   "scopeTags": [
+    "kafka",
+    "messaging"
+   ],
+   "createdAt": "2026-11-16T04:26:17.265Z",
+   "updatedAt": "2026-11-16T04:26:17.265Z"
+  },
+  {
+   "id": "59de8074-ec97-4447-99f7-029d50266a43",
+   "key": "PRM-36",
+   "statement": "Alert when PostgreSQL replica lag exceeds 30 seconds.",
+   "originType": "jsm_pir",
+   "originId": "INC-222",
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "dueDate": "2026-09-20",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Alert when PostgreSQL replica lag exceeds 30 seconds. Owner: Aiko Tanaka. Due 2026-09-20.",
+   "scopeTags": [
+    "database",
+    "postgresql",
+    "alerting"
+   ],
+   "createdAt": "2026-11-16T04:26:17.265Z",
+   "updatedAt": "2026-11-16T04:26:17.265Z"
+  },
+  {
+   "id": "a7b9921c-661e-40be-a004-f7eeffc7cfc7",
+   "key": "PRM-33",
+   "statement": "Run a load test of checkout against a slow acquirer before every peak season.",
+   "originType": "jsm_pir",
+   "originId": "INC-214",
+   "ownerAccountId": null,
+   "ownerName": "Marcus Oyelaran",
+   "dueDate": "2026-09-15",
+   "linkedIssueKey": null,
+   "status": "broken",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Run a load test of checkout against a slow acquirer before every peak season. Owner: Marcus Oyelaran. Due 2026-09-15.",
+   "scopeTags": [
+    "checkout",
+    "load-test",
+    "acquirer"
+   ],
+   "createdAt": "2026-11-16T04:26:17.263Z",
+   "updatedAt": "2026-11-16T04:26:17.263Z"
+  },
+  {
+   "id": "71bafb23-fcec-4a64-8bd1-03a424fe44de",
+   "key": "PRM-32",
+   "statement": "Add an alert on checkout connection pool saturation above 80%.",
+   "originType": "jsm_pir",
+   "originId": "INC-214",
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "dueDate": "2026-08-08",
+   "linkedIssueKey": null,
+   "status": "broken",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Add an alert on checkout connection pool saturation above 80%. Owner: Tom Becker. Due 2026-08-08.",
+   "scopeTags": [
+    "checkout",
+    "alerting",
+    "connection-pool"
+   ],
+   "createdAt": "2026-11-16T04:26:17.263Z",
+   "updatedAt": "2026-11-16T04:26:17.263Z"
+  },
+  {
+   "id": "56e1aa36-fe29-498a-9d8f-446f8463b969",
+   "key": "PRM-31",
+   "statement": "Add a 3 second timeout and circuit breaker to all acquirer calls in checkout.",
+   "originType": "jsm_pir",
+   "originId": "INC-214",
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "dueDate": "2026-08-01",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Add a 3 second timeout and circuit breaker to all acquirer calls in checkout. Owner: Aiko Tanaka. Due 2026-08-01.",
+   "scopeTags": [
+    "checkout",
+    "timeouts",
+    "acquirer"
+   ],
+   "createdAt": "2026-11-16T04:26:17.263Z",
+   "updatedAt": "2026-11-16T04:26:17.263Z"
+  },
+  {
+   "id": "8225c839-8bb4-4b01-81d8-bc01da7e8a74",
+   "key": "PRM-34",
+   "statement": "Test the Android SDK on devices without Play Services in CI.",
+   "originType": "jsm_pir",
+   "originId": "INC-208",
+   "ownerAccountId": null,
+   "ownerName": "Elena Sokolova",
+   "dueDate": "2026-07-20",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Test the Android SDK on devices without Play Services in CI. Owner: Elena Sokolova.",
+   "scopeTags": [
+    "mobile",
+    "android",
+    "ci"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  },
+  {
+   "id": "b2715b06-55d8-46ff-a0ec-73629ebe4491",
+   "key": "PRM-27",
+   "statement": "Add expiry alerts 30 days ahead for every production certificate.",
+   "originType": "jsm_pir",
+   "originId": "INC-201",
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "dueDate": "2026-07-01",
+   "linkedIssueKey": null,
+   "status": "overdue",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Add expiry alerts 30 days ahead for every production certificate. Owner: Tom Becker. Due 2026-07-01.",
+   "scopeTags": [
+    "certificates",
+    "alerting"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  },
+  {
+   "id": "e5f5f116-7eac-49f3-a2b8-e0fbb70b64e1",
+   "key": "PRM-29",
+   "statement": "Delete all feature flags that have been at 100% for more than 30 days.",
+   "originType": "jsm_pir",
+   "originId": "INC-193",
+   "ownerAccountId": null,
+   "ownerName": "Tom Becker",
+   "dueDate": "2026-06-30",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Follow-up: Delete all feature flags that have been at 100% for more than 30 days. Owner: Tom Becker.",
+   "scopeTags": [
+    "feature-flags"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  },
+  {
+   "id": "fd178443-524f-4a7a-9387-668ea3332900",
+   "key": "PRM-26",
+   "statement": "Automate certificate renewal for the auth service.",
+   "originType": "jsm_pir",
+   "originId": "INC-201",
+   "ownerAccountId": null,
+   "ownerName": "Aiko Tanaka",
+   "dueDate": "2026-06-20",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Automate certificate renewal for the auth service. Owner: Aiko Tanaka. Due 2026-06-20.",
+   "scopeTags": [
+    "auth",
+    "certificates"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  },
+  {
+   "id": "74bc8014-e8c8-4c80-be58-f1b1d6018336",
+   "key": "PRM-22",
+   "statement": "Add a reconciliation job that detects duplicate payouts within one hour.",
+   "originType": "jsm_pir",
+   "originId": "INC-187",
+   "ownerAccountId": null,
+   "ownerName": "Priya Raman",
+   "dueDate": "2026-05-31",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Add a reconciliation job that detects duplicate payouts within one hour. Owner: Priya Raman. Due 2026-05-31.",
+   "scopeTags": [
+    "payouts",
+    "reconciliation"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  },
+  {
+   "id": "cc62b850-8621-4e46-bced-ae8b4e685d53",
+   "key": "PRM-21",
+   "statement": "Make the payout endpoint idempotent with an Idempotency-Key.",
+   "originType": "jsm_pir",
+   "originId": "INC-187",
+   "ownerAccountId": null,
+   "ownerName": "Marcus Oyelaran",
+   "dueDate": "2026-05-10",
+   "linkedIssueKey": null,
+   "status": "kept",
+   "sourceUrl": null,
+   "sourceSnippet": "Action item: Make the payout endpoint idempotent with an Idempotency-Key. Owner: Marcus Oyelaran. Due 2026-05-10.",
+   "scopeTags": [
+    "payouts",
+    "idempotency"
+   ],
+   "createdAt": "2026-11-16T04:26:17.264Z",
+   "updatedAt": "2026-11-16T04:26:17.264Z"
+  }
+ ],
+ "incidents": [
+  {
+   "incident": {
+    "key": "INC-214",
+    "summary": "Checkout payment timeouts",
+    "description": "Card payments in checkout timed out for 47 minutes. The acquirer gateway slowed down, our checkout service had no timeout on acquirer calls, the connection pool was exhausted and every checkout request queued until it failed.",
+    "occurredAt": "2026-07-14",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "checkout",
+     "payments",
+     "timeouts",
+     "acquirer"
+    ]
+   },
+   "promises": [
+    {
+     "id": "a7b9921c-661e-40be-a004-f7eeffc7cfc7",
+     "key": "PRM-33",
+     "statement": "Run a load test of checkout against a slow acquirer before every peak season.",
+     "originType": "jsm_pir",
+     "originId": "INC-214",
+     "ownerAccountId": null,
+     "ownerName": "Marcus Oyelaran",
+     "dueDate": "2026-09-15",
+     "linkedIssueKey": null,
+     "status": "broken",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Run a load test of checkout against a slow acquirer before every peak season. Owner: Marcus Oyelaran. Due 2026-09-15.",
+     "scopeTags": [
+      "checkout",
+      "load-test",
+      "acquirer"
+     ],
+     "createdAt": "2026-11-16T04:26:17.263Z",
+     "updatedAt": "2026-11-16T04:26:17.263Z"
+    },
+    {
+     "id": "71bafb23-fcec-4a64-8bd1-03a424fe44de",
+     "key": "PRM-32",
+     "statement": "Add an alert on checkout connection pool saturation above 80%.",
+     "originType": "jsm_pir",
+     "originId": "INC-214",
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "dueDate": "2026-08-08",
+     "linkedIssueKey": null,
+     "status": "broken",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Add an alert on checkout connection pool saturation above 80%. Owner: Tom Becker. Due 2026-08-08.",
+     "scopeTags": [
+      "checkout",
+      "alerting",
+      "connection-pool"
+     ],
+     "createdAt": "2026-11-16T04:26:17.263Z",
+     "updatedAt": "2026-11-16T04:26:17.263Z"
+    },
+    {
+     "id": "56e1aa36-fe29-498a-9d8f-446f8463b969",
+     "key": "PRM-31",
+     "statement": "Add a 3 second timeout and circuit breaker to all acquirer calls in checkout.",
+     "originType": "jsm_pir",
+     "originId": "INC-214",
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "dueDate": "2026-08-01",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Add a 3 second timeout and circuit breaker to all acquirer calls in checkout. Owner: Aiko Tanaka. Due 2026-08-01.",
+     "scopeTags": [
+      "checkout",
+      "timeouts",
+      "acquirer"
+     ],
+     "createdAt": "2026-11-16T04:26:17.263Z",
+     "updatedAt": "2026-11-16T04:26:17.263Z"
+    }
+   ],
+   "openPromises": 2,
+   "recurrences": [
+    {
+     "workItemKey": "INC-231",
+     "confidence": 0.8833333333333333,
+     "explanation": "Same failure pattern as INC-214 \"Checkout payment timeouts\" (checkout, card, payment). 2 of the fixes promised after INC-214 are still not done.",
+     "at": "2026-11-16T04:26:17.273Z"
+    }
+   ]
+  },
+  {
+   "incident": {
+    "key": "INC-231",
+    "summary": "Checkout timing out for card payments",
+    "description": "Card payments in checkout are timing out again. The acquirer gateway is responding slowly and checkout requests queue until the connection pool is exhausted.",
+    "occurredAt": "2026-11-16T04:26:17.272Z",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "checkout",
+     "payments"
+    ]
+   },
+   "promises": [],
+   "openPromises": 0,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-222",
+    "summary": "Database failover took 9 minutes",
+    "description": "The primary PostgreSQL node failed. Automatic failover took 9 minutes because the replica was lagging.",
+    "occurredAt": "2026-08-29",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "database",
+     "postgresql",
+     "failover"
+    ]
+   },
+   "promises": [
+    {
+     "id": "9e92fff4-b2fe-49e8-ba1b-fd1ddba80735",
+     "key": "PRM-37",
+     "statement": "Run a failover drill every quarter.",
+     "originType": "jsm_pir",
+     "originId": "INC-222",
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "dueDate": "2026-12-15",
+     "linkedIssueKey": null,
+     "status": "open",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Run a failover drill every quarter. Owner: Aiko Tanaka. Due 2026-12-15.",
+     "scopeTags": [
+      "database",
+      "failover"
+     ],
+     "createdAt": "2026-11-16T04:26:17.265Z",
+     "updatedAt": "2026-11-16T04:26:17.265Z"
+    },
+    {
+     "id": "59de8074-ec97-4447-99f7-029d50266a43",
+     "key": "PRM-36",
+     "statement": "Alert when PostgreSQL replica lag exceeds 30 seconds.",
+     "originType": "jsm_pir",
+     "originId": "INC-222",
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "dueDate": "2026-09-20",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Alert when PostgreSQL replica lag exceeds 30 seconds. Owner: Aiko Tanaka. Due 2026-09-20.",
+     "scopeTags": [
+      "database",
+      "postgresql",
+      "alerting"
+     ],
+     "createdAt": "2026-11-16T04:26:17.265Z",
+     "updatedAt": "2026-11-16T04:26:17.265Z"
+    }
+   ],
+   "openPromises": 1,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-208",
+    "summary": "Mobile SDK crash on app start",
+    "description": "Release 4.2 of the Android SDK crashed on start for devices without Play Services.",
+    "occurredAt": "2026-06-25",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "mobile",
+     "android",
+     "sdk"
+    ]
+   },
+   "promises": [
+    {
+     "id": "8225c839-8bb4-4b01-81d8-bc01da7e8a74",
+     "key": "PRM-34",
+     "statement": "Test the Android SDK on devices without Play Services in CI.",
+     "originType": "jsm_pir",
+     "originId": "INC-208",
+     "ownerAccountId": null,
+     "ownerName": "Elena Sokolova",
+     "dueDate": "2026-07-20",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Test the Android SDK on devices without Play Services in CI. Owner: Elena Sokolova.",
+     "scopeTags": [
+      "mobile",
+      "android",
+      "ci"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    }
+   ],
+   "openPromises": 0,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-201",
+    "summary": "Login outage after certificate expiry",
+    "description": "The TLS certificate of the auth service expired. Customers and merchants could not sign in for 22 minutes.",
+    "occurredAt": "2026-06-03",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "auth",
+     "certificates"
+    ]
+   },
+   "promises": [
+    {
+     "id": "b2715b06-55d8-46ff-a0ec-73629ebe4491",
+     "key": "PRM-27",
+     "statement": "Add expiry alerts 30 days ahead for every production certificate.",
+     "originType": "jsm_pir",
+     "originId": "INC-201",
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "dueDate": "2026-07-01",
+     "linkedIssueKey": null,
+     "status": "overdue",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Add expiry alerts 30 days ahead for every production certificate. Owner: Tom Becker. Due 2026-07-01.",
+     "scopeTags": [
+      "certificates",
+      "alerting"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    },
+    {
+     "id": "fd178443-524f-4a7a-9387-668ea3332900",
+     "key": "PRM-26",
+     "statement": "Automate certificate renewal for the auth service.",
+     "originType": "jsm_pir",
+     "originId": "INC-201",
+     "ownerAccountId": null,
+     "ownerName": "Aiko Tanaka",
+     "dueDate": "2026-06-20",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Automate certificate renewal for the auth service. Owner: Aiko Tanaka. Due 2026-06-20.",
+     "scopeTags": [
+      "auth",
+      "certificates"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    }
+   ],
+   "openPromises": 1,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-193",
+    "summary": "Settlement report generated with wrong fee table",
+    "description": "A stale feature flag loaded the 2025 fee table and settlement reports for May were wrong for 40 merchants.",
+    "occurredAt": "2026-05-19",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "settlement",
+     "feature-flags"
+    ]
+   },
+   "promises": [
+    {
+     "id": "e5f5f116-7eac-49f3-a2b8-e0fbb70b64e1",
+     "key": "PRM-29",
+     "statement": "Delete all feature flags that have been at 100% for more than 30 days.",
+     "originType": "jsm_pir",
+     "originId": "INC-193",
+     "ownerAccountId": null,
+     "ownerName": "Tom Becker",
+     "dueDate": "2026-06-30",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Follow-up: Delete all feature flags that have been at 100% for more than 30 days. Owner: Tom Becker.",
+     "scopeTags": [
+      "feature-flags"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    }
+   ],
+   "openPromises": 0,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-187",
+    "summary": "Duplicate payouts to merchants",
+    "description": "A retry storm in the payout worker sent 312 merchants their payout twice because the payout endpoint was not idempotent.",
+    "occurredAt": "2026-04-22",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "payouts",
+     "idempotency"
+    ]
+   },
+   "promises": [
+    {
+     "id": "74bc8014-e8c8-4c80-be58-f1b1d6018336",
+     "key": "PRM-22",
+     "statement": "Add a reconciliation job that detects duplicate payouts within one hour.",
+     "originType": "jsm_pir",
+     "originId": "INC-187",
+     "ownerAccountId": null,
+     "ownerName": "Priya Raman",
+     "dueDate": "2026-05-31",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Add a reconciliation job that detects duplicate payouts within one hour. Owner: Priya Raman. Due 2026-05-31.",
+     "scopeTags": [
+      "payouts",
+      "reconciliation"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    },
+    {
+     "id": "cc62b850-8621-4e46-bced-ae8b4e685d53",
+     "key": "PRM-21",
+     "statement": "Make the payout endpoint idempotent with an Idempotency-Key.",
+     "originType": "jsm_pir",
+     "originId": "INC-187",
+     "ownerAccountId": null,
+     "ownerName": "Marcus Oyelaran",
+     "dueDate": "2026-05-10",
+     "linkedIssueKey": null,
+     "status": "kept",
+     "sourceUrl": null,
+     "sourceSnippet": "Action item: Make the payout endpoint idempotent with an Idempotency-Key. Owner: Marcus Oyelaran. Due 2026-05-10.",
+     "scopeTags": [
+      "payouts",
+      "idempotency"
+     ],
+     "createdAt": "2026-11-16T04:26:17.264Z",
+     "updatedAt": "2026-11-16T04:26:17.264Z"
+    }
+   ],
+   "openPromises": 0,
+   "recurrences": []
+  },
+  {
+   "incident": {
+    "key": "INC-176",
+    "summary": "Webhook delivery delays",
+    "description": "Merchant webhooks were delayed up to 3 hours while a Kafka consumer group was stuck rebalancing.",
+    "occurredAt": "2026-03-30",
+    "postmortemUrl": null,
+    "scopeTags": [
+     "webhooks",
+     "kafka"
+    ]
+   },
+   "promises": [],
+   "openPromises": 0,
+   "recurrences": []
+  }
+ ],
+ "flags": [
+  {
+   "flagId": "4f886de0-a881-4072-87da-199ff14fe746",
+   "workItemKey": "PAY-482",
+   "kind": "conflict",
+   "confidence": 0.8799999999999999,
+   "explanation": "This work proposes something the team decided against: \"We will not move customer authentication to Firebase Auth.\"",
+   "dismissed": false,
+   "createdAt": "2026-11-16T04:26:17.270Z",
+   "target": {
+    "type": "decision",
+    "id": "da324565-2668-48c9-9f2f-e7fd19860ded",
+    "key": "DEC-12",
+    "title": "Keep authentication in-house; do not move to Firebase",
+    "statement": "We will not move customer authentication to Firebase Auth. Identity stays on our own auth service in the EU region.",
+    "snippet": "We decided NOT to move authentication to Firebase. EU customer identity data must stay in EU-controlled infrastructure.",
+    "sourceUrl": null,
+    "sourceLabel": "Sample data",
+    "ownerName": "Priya Raman",
+    "ownerAccountId": null,
+    "date": "2026-03-12",
+    "status": "accepted",
+    "restricted": false
+   }
+  },
+  {
+   "flagId": "73733d38-92f2-4c12-ab9a-72f645a2e9c7",
+   "workItemKey": "INC-231",
+   "kind": "deja_vu",
+   "confidence": 0.8833333333333333,
+   "explanation": "Same failure pattern as INC-214 \"Checkout payment timeouts\" (checkout, card, payment). 2 of the fixes promised after INC-214 are still not done.",
+   "dismissed": false,
+   "createdAt": "2026-11-16T04:26:17.273Z",
+   "target": {
+    "type": "incident",
+    "id": "INC-214",
+    "key": "INC-214",
+    "title": "Checkout payment timeouts",
+    "statement": "Checkout payment timeouts",
+    "snippet": "Card payments in checkout timed out for 47 minutes. The acquirer gateway slowed down, our checkout service had no timeout on acquirer calls, the connection pool was exhausted and every checkout request queued until it failed.",
+    "sourceUrl": null,
+    "sourceLabel": "Past incident",
+    "ownerName": null,
+    "ownerAccountId": null,
+    "date": "2026-07-14",
+    "status": "incident",
+    "restricted": false
+   }
+  },
+  {
+   "flagId": "ef91d52d-ab23-4bcc-97d1-91c1bf67dd07",
+   "workItemKey": "INC-231",
+   "kind": "open_promise",
+   "confidence": 0.8633333333333333,
+   "explanation": "Promised after INC-214 and still broken: \"Run a load test of checkout against a slow acquirer before every peak season.\"",
+   "dismissed": false,
+   "createdAt": "2026-11-16T04:26:17.273Z",
+   "target": {
+    "type": "promise",
+    "id": "a7b9921c-661e-40be-a004-f7eeffc7cfc7",
+    "key": "PRM-33",
+    "title": "Run a load test of checkout against a slow acquirer before every peak season.",
+    "statement": "Run a load test of checkout against a slow acquirer before every peak season.",
+    "snippet": "Action item: Run a load test of checkout against a slow acquirer before every peak season. Owner: Marcus Oyelaran. Due 2026-09-15.",
+    "sourceUrl": null,
+    "sourceLabel": "Post-incident review",
+    "ownerName": "Marcus Oyelaran",
+    "ownerAccountId": null,
+    "date": "2026-09-15",
+    "status": "broken",
+    "restricted": false
+   }
+  },
+  {
+   "flagId": "7f77a1da-d041-4675-b4f2-d39e88b80eac",
+   "workItemKey": "INC-231",
+   "kind": "open_promise",
+   "confidence": 0.8633333333333333,
+   "explanation": "Promised after INC-214 and still broken: \"Add an alert on checkout connection pool saturation above 80%.\"",
+   "dismissed": false,
+   "createdAt": "2026-11-16T04:26:17.273Z",
+   "target": {
+    "type": "promise",
+    "id": "71bafb23-fcec-4a64-8bd1-03a424fe44de",
+    "key": "PRM-32",
+    "title": "Add an alert on checkout connection pool saturation above 80%.",
+    "statement": "Add an alert on checkout connection pool saturation above 80%.",
+    "snippet": "Action item: Add an alert on checkout connection pool saturation above 80%. Owner: Tom Becker. Due 2026-08-08.",
+    "sourceUrl": null,
+    "sourceLabel": "Post-incident review",
+    "ownerName": "Tom Becker",
+    "ownerAccountId": null,
+    "date": "2026-08-08",
+    "status": "broken",
+    "restricted": false
+   }
+  }
+ ],
+ "panels": {
+  "PAY-482": {
+   "workItemKey": "PAY-482",
+   "verdict": {
+    "tone": "conflict",
+    "text": "Conflicts with 1 decision"
+   },
+   "cards": [
+    {
+     "flagId": "4f886de0-a881-4072-87da-199ff14fe746",
+     "workItemKey": "PAY-482",
+     "kind": "conflict",
+     "confidence": 0.8799999999999999,
+     "explanation": "This work proposes something the team decided against: \"We will not move customer authentication to Firebase Auth.\"",
+     "dismissed": false,
+     "createdAt": "2026-11-16T04:26:17.270Z",
+     "target": {
+      "type": "decision",
+      "id": "da324565-2668-48c9-9f2f-e7fd19860ded",
+      "key": "DEC-12",
+      "title": "Keep authentication in-house; do not move to Firebase",
+      "statement": "We will not move customer authentication to Firebase Auth. Identity stays on our own auth service in the EU region.",
+      "snippet": "We decided NOT to move authentication to Firebase. EU customer identity data must stay in EU-controlled infrastructure.",
+      "sourceUrl": null,
+      "sourceLabel": "Sample data",
+      "ownerName": "Priya Raman",
+      "ownerAccountId": null,
+      "date": "2026-03-12",
+      "status": "accepted",
+      "restricted": false
+     }
+    }
+   ],
+   "ledgerEmpty": false
+  },
+  "INC-231": {
+   "workItemKey": "INC-231",
+   "verdict": {
+    "tone": "dejavu",
+    "text": "Looks like INC-214 — 2 promises still open"
+   },
+   "cards": [
+    {
+     "flagId": "73733d38-92f2-4c12-ab9a-72f645a2e9c7",
+     "workItemKey": "INC-231",
+     "kind": "deja_vu",
+     "confidence": 0.8833333333333333,
+     "explanation": "Same failure pattern as INC-214 \"Checkout payment timeouts\" (checkout, card, payment). 2 of the fixes promised after INC-214 are still not done.",
+     "dismissed": false,
+     "createdAt": "2026-11-16T04:26:17.273Z",
+     "target": {
+      "type": "incident",
+      "id": "INC-214",
+      "key": "INC-214",
+      "title": "Checkout payment timeouts",
+      "statement": "Checkout payment timeouts",
+      "snippet": "Card payments in checkout timed out for 47 minutes. The acquirer gateway slowed down, our checkout service had no timeout on acquirer calls, the connection pool was exhausted and every checkout request queued until it failed.",
+      "sourceUrl": null,
+      "sourceLabel": "Past incident",
+      "ownerName": null,
+      "ownerAccountId": null,
+      "date": "2026-07-14",
+      "status": "incident",
+      "restricted": false
+     }
+    },
+    {
+     "flagId": "ef91d52d-ab23-4bcc-97d1-91c1bf67dd07",
+     "workItemKey": "INC-231",
+     "kind": "open_promise",
+     "confidence": 0.8633333333333333,
+     "explanation": "Promised after INC-214 and still broken: \"Run a load test of checkout against a slow acquirer before every peak season.\"",
+     "dismissed": false,
+     "createdAt": "2026-11-16T04:26:17.273Z",
+     "target": {
+      "type": "promise",
+      "id": "a7b9921c-661e-40be-a004-f7eeffc7cfc7",
+      "key": "PRM-33",
+      "title": "Run a load test of checkout against a slow acquirer before every peak season.",
+      "statement": "Run a load test of checkout against a slow acquirer before every peak season.",
+      "snippet": "Action item: Run a load test of checkout against a slow acquirer before every peak season. Owner: Marcus Oyelaran. Due 2026-09-15.",
+      "sourceUrl": null,
+      "sourceLabel": "Post-incident review",
+      "ownerName": "Marcus Oyelaran",
+      "ownerAccountId": null,
+      "date": "2026-09-15",
+      "status": "broken",
+      "restricted": false
+     }
+    },
+    {
+     "flagId": "7f77a1da-d041-4675-b4f2-d39e88b80eac",
+     "workItemKey": "INC-231",
+     "kind": "open_promise",
+     "confidence": 0.8633333333333333,
+     "explanation": "Promised after INC-214 and still broken: \"Add an alert on checkout connection pool saturation above 80%.\"",
+     "dismissed": false,
+     "createdAt": "2026-11-16T04:26:17.273Z",
+     "target": {
+      "type": "promise",
+      "id": "71bafb23-fcec-4a64-8bd1-03a424fe44de",
+      "key": "PRM-32",
+      "title": "Add an alert on checkout connection pool saturation above 80%.",
+      "statement": "Add an alert on checkout connection pool saturation above 80%.",
+      "snippet": "Action item: Add an alert on checkout connection pool saturation above 80%. Owner: Tom Becker. Due 2026-08-08.",
+      "sourceUrl": null,
+      "sourceLabel": "Post-incident review",
+      "ownerName": "Tom Becker",
+      "ownerAccountId": null,
+      "date": "2026-08-08",
+      "status": "broken",
+      "restricted": false
+     }
+    }
+   ],
+   "ledgerEmpty": false
+  },
+  "PAY-490": {
+   "workItemKey": "PAY-490",
+   "verdict": {
+    "tone": "clear",
+    "text": "No precedents found"
+   },
+   "cards": [],
+   "ledgerEmpty": false
+  }
+ },
+ "workItems": [
+  {
+   "key": "PAY-482",
+   "summary": "Migrate customer login to Firebase Auth",
+   "incident": false
+  },
+  {
+   "key": "INC-231",
+   "summary": "Checkout timing out for card payments",
+   "incident": true
+  },
+  {
+   "key": "PAY-490",
+   "summary": "Add dark mode to the merchant dashboard",
+   "incident": false
+  }
+ ],
+ "eval": {
+  "judge": "heuristic",
+  "cases": 46,
+  "precision": 1,
+  "recall": 0.8,
+  "f1": 0.889,
+  "accuracy": 0.891,
+  "truePositives": 16,
+  "falsePositives": 0,
+  "falseNegatives": 4,
+  "failures": [
+   {
+    "id": "c05",
+    "expected": "conflict",
+    "got": "unrelated",
+    "confidence": 0.8,
+    "note": "conflict in different words"
+   },
+   {
+    "id": "c09",
+    "expected": "related",
+    "got": "unrelated",
+    "confidence": 0.8,
+    "note": "implements the decision"
+   },
+   {
+    "id": "c11",
+    "expected": "conflict",
+    "got": "unrelated",
+    "confidence": 0.8,
+    "note": "different words: save credit card digits"
+   },
+   {
+    "id": "c25",
+    "expected": "conflict",
+    "got": "unrelated",
+    "confidence": 0.8,
+    "note": "different words: retry five times"
+   },
+   {
+    "id": "c45",
+    "expected": "conflict",
+    "got": "unrelated",
+    "confidence": 0.8,
+    "note": "different words, residency"
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "precedent-ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config ledger/vite.config.ts",
+    "build": "tsc --noEmit -p tsconfig.json && vite build --config ledger/vite.config.ts && vite build --config admin/vite.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "preview": "vite preview --config ledger/vite.config.ts"
+  },
+  "dependencies": {
+    "@atlaskit/tokens": "^20.12.0",
+    "@fontsource-variable/fraunces": "^5.2.0",
+    "@fontsource-variable/instrument-sans": "^5.2.0",
+    "@fontsource-variable/jetbrains-mono": "^5.2.0",
+    "@forge/bridge": "^7.3.0",
+    "motion": "^14.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  }
+}

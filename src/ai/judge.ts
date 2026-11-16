@@ -132,7 +132,7 @@ export function heuristicJudge(input: HeuristicInput): JudgeResultT {
       return {
         relation: 'conflict',
         confidence: Math.min(0.92, (adopts ? 0.7 : 0.6) + 0.06 * hits.length + (scopeHit ? 0.06 : 0)),
-        explanation: `It proposes ${hits.slice(0, 3).join(', ')}, which the team decided against: "${firstQuote}".`,
+        explanation: `This work proposes something the team decided against: "${firstQuote}"`,
         quote: firstQuote,
       };
     }

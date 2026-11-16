@@ -10,6 +10,7 @@
     "test": "vitest run",
     "eval": "node --import tsx scripts/eval.ts",
     "eval:build": "node scripts/build-eval-cases.mjs",
+    "mock:build": "node --import tsx scripts/build-mock.ts",
     "lint:manifest": "node scripts/validate-manifest.mjs",
     "ui:install": "npm --prefix static install",
     "ui:build": "npm --prefix static run build",

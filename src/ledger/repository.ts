@@ -284,7 +284,7 @@ export class LedgerRepository {
     }
     const limit = Math.min(Math.max(filter.limit ?? 500, 1), 1000);
     const rows = await this.db.query<Row>(
-      `SELECT * FROM decisions ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY created_at DESC LIMIT ${limit}`,
+      `SELECT * FROM decisions ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY decided_at DESC, created_at DESC LIMIT ${limit}`,
       params,
     );
     return rows.map(toDecision);
@@ -414,7 +414,7 @@ export class LedgerRepository {
     }
     const limit = Math.min(Math.max(filter.limit ?? 500, 1), 1000);
     const rows = await this.db.query<Row>(
-      `SELECT * FROM promises ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY created_at DESC LIMIT ${limit}`,
+      `SELECT * FROM promises ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY due_date DESC, created_at DESC LIMIT ${limit}`,
       params,
     );
     return rows.map(toPromise);

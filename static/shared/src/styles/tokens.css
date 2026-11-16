@@ -1,0 +1,100 @@
+/*
+ * Precedent design tokens.
+ * Surfaces and text follow Atlassian design tokens (--ds-*) when Jira provides them,
+ * so the app sits naturally inside Jira in light and dark mode. The brand layer on top
+ * (ink, brass, oxblood, moss) is ours: muted archive colours, no neon.
+ */
+:root {
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Instrument Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --paper: #f7f3eb;
+  --paper-deep: #efe9dc;
+  --surface: var(--ds-surface, #fffdf9);
+  --surface-raised: #ffffff;
+  --surface-sunken: #f1ece1;
+  --ink: #1b2333;
+  --ink-soft: #46506a;
+  --ink-faint: #737b8f;
+  --rule: #ded6c5;
+  --rule-strong: #c4baa3;
+
+  --brass: #9a6b1c;
+  --brass-soft: #f1e3c4;
+  --brass-line: #c9973f;
+  --oxblood: #8a2d3b;
+  --oxblood-soft: #f3dcdc;
+  --moss: #2f6650;
+  --moss-soft: #d9e9df;
+  --slate: #33577f;
+  --slate-soft: #dbe5f0;
+  --plum: #5d4a7a;
+  --plum-soft: #e6dff0;
+  --stone-soft: #e8e3d8;
+
+  --chart-kept: #2a6ea6;
+  --chart-missed: #c4622d;
+  --chart-track: #e6dfd0;
+
+  --sidebar-bg: #1b2333;
+  --sidebar-ink: #e9e3d6;
+  --sidebar-faint: #98a0b5;
+  --sidebar-rule: #2e3850;
+  --sidebar-active: #2a3449;
+
+  --shadow-1: 0 1px 0 rgba(27, 35, 51, 0.04), 0 1px 3px rgba(27, 35, 51, 0.06);
+  --shadow-2: 0 2px 6px rgba(27, 35, 51, 0.06), 0 12px 28px -12px rgba(27, 35, 51, 0.18);
+  --shadow-3: 0 24px 60px -20px rgba(27, 35, 51, 0.35);
+  --focus: 0 0 0 2px var(--surface), 0 0 0 4px #33577f;
+
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 16px;
+  --ease: cubic-bezier(0.22, 0.8, 0.26, 1);
+
+  color-scheme: light;
+}
+
+html[data-color-mode='dark'] {
+  --paper: #12151c;
+  --paper-deep: #0e1117;
+  --surface: var(--ds-surface, #181c25);
+  --surface-raised: #1e232e;
+  --surface-sunken: #141820;
+  --ink: #ece6d9;
+  --ink-soft: #b9bfcd;
+  --ink-faint: #8d94a6;
+  --rule: #2b3140;
+  --rule-strong: #3d4558;
+
+  --brass: #dcae5c;
+  --brass-soft: #3a2f18;
+  --brass-line: #c9973f;
+  --oxblood: #e39aa3;
+  --oxblood-soft: #40222a;
+  --moss: #8cc3a6;
+  --moss-soft: #1d3329;
+  --slate: #9bbbe0;
+  --slate-soft: #1e2c40;
+  --plum: #bfaedb;
+  --plum-soft: #2c2540;
+  --stone-soft: #262b37;
+
+  --chart-kept: #4f8fc4;
+  --chart-missed: #c9753a;
+  --chart-track: #2a303d;
+
+  --sidebar-bg: #0e1117;
+  --sidebar-ink: #e3ddd0;
+  --sidebar-faint: #868da0;
+  --sidebar-rule: #222836;
+  --sidebar-active: #1c212c;
+
+  --shadow-1: 0 1px 0 rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.35), 0 14px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-3: 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+  --focus: 0 0 0 2px var(--surface), 0 0 0 4px #9bbbe0;
+
+  color-scheme: dark;
+}
