@@ -125,9 +125,9 @@ describe('explanations and models', () => {
     expect(e.summary).toContain('"quote"');
   });
   it('picks a small model for the small tier and a larger one for explanations', () => {
-    const models = ['claude-haiku-4-5', 'claude-sonnet-4-5', 'claude-opus-4-1'];
-    expect(pickModel(models, 'small')).toBe('claude-haiku-4-5');
-    expect(pickModel(models, 'large')).toBe('claude-sonnet-4-5');
+    const models = ['haiku-4-5', 'sonnet-4-5', 'opus-4-1'];
+    expect(pickModel(models, 'small')).toBe('haiku-4-5');
+    expect(pickModel(models, 'large')).toBe('sonnet-4-5');
     expect(pickModel([], 'small')).toBeNull();
   });
 });

@@ -23,12 +23,14 @@ export interface GuardOutcome {
   method: 'llm' | 'heuristic';
 }
 
+export const GUARD_COMMENT_PREFIX = 'Precedent found';
+
 export function commentText(flags: FlagInput[], names: Map<string, string>): string {
   const lines = flags.map((f) => {
     const label = f.kind === 'conflict' ? 'Conflict' : f.kind === 'deja_vu' ? 'Déjà vu' : f.kind === 'open_promise' ? 'Open promise' : 'Revisits';
     return `${label} · ${names.get(f.targetId) ?? f.targetId}: ${f.explanation}`;
   });
-  return `Precedent found earlier decisions or promises that apply here.\n${lines.join('\n')}\nOpen the Precedent panel on this work item for sources.`;
+  return `${GUARD_COMMENT_PREFIX} earlier decisions or promises that apply here.\n${lines.join('\n')}\nOpen the Precedent panel on this work item for sources.`;
 }
 
 export async function guardWorkItem(item: WorkItem, deps: GuardDeps): Promise<GuardOutcome> {

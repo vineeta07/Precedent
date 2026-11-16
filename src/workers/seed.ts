@@ -52,16 +52,20 @@ export async function loadSampleWorld(opts: { projectKey?: string; spaceId?: str
   let issuesCreated = 0;
 
   if (opts.spaceId) {
-    for (const page of SEED_PAGES) {
-      try {
-        const existing = await findPageByTitle(opts.spaceId, page.title);
-        const created = existing ?? (await createPage(opts.spaceId, page.title, page.storage));
-        if (!existing) pagesCreated++;
-        (targets.pages as Record<string, { id: string; url: string }>)[page.slug] = created;
-      } catch {
-        warnings.push(`Could not create the page "${page.title}". The ledger still has its content.`);
-      }
-    }
+    const spaceId = opts.spaceId;
+    // Created in parallel: a resolver has 25 seconds in total.
+    await Promise.all(
+      SEED_PAGES.map(async (page) => {
+        try {
+          const existing = await findPageByTitle(spaceId, page.title);
+          const created = existing ?? (await createPage(spaceId, page.title, page.storage));
+          if (!existing) pagesCreated++;
+          (targets.pages as Record<string, { id: string; url: string }>)[page.slug] = created;
+        } catch {
+          warnings.push(`Could not create the page "${page.title}". The ledger still has its content.`);
+        }
+      }),
+    );
   }
 
   let taskTypeId: string | null = null;
@@ -76,27 +80,31 @@ export async function loadSampleWorld(opts: { projectKey?: string; spaceId?: str
   }
 
   if (opts.projectKey && taskTypeId) {
-    for (const p of SEED_PROMISES) {
-      if (!p.issue) continue;
-      if (previous.issues[p.key]) {
-        (targets.issues as Record<string, string>)[p.key] = previous.issues[p.key] as string;
-        continue;
-      }
-      try {
-        const key = await createIssue({
-          projectKey: opts.projectKey,
-          issueTypeId: taskTypeId,
-          summary: p.issue.summary,
-          description: `Promised in the postmortem of ${p.origin}.\n${p.statement}\nOwner: ${p.owner}. Due ${p.due}.`,
-          labels: ['precedent-sample'],
-        });
-        if (p.issue.done) await closeIssue(key).catch(() => undefined);
-        (targets.issues as Record<string, string>)[p.key] = key;
-        issuesCreated++;
-      } catch {
-        warnings.push(`Could not create the tracking work item for ${p.key}.`);
-      }
-    }
+    const projectKey = opts.projectKey;
+    const typeId = taskTypeId;
+    await Promise.all(
+      SEED_PROMISES.filter((p) => p.issue).map(async (p) => {
+        const known = previous.issues[p.key];
+        if (known) {
+          (targets.issues as Record<string, string>)[p.key] = known;
+          return;
+        }
+        try {
+          const key = await createIssue({
+            projectKey,
+            issueTypeId: typeId,
+            summary: p.issue?.summary ?? p.statement,
+            description: `Promised in the postmortem of ${p.origin}.\n${p.statement}\nOwner: ${p.owner}. Due ${p.due}.`,
+            labels: ['precedent-sample'],
+          });
+          if (p.issue?.done) await closeIssue(key).catch(() => undefined);
+          (targets.issues as Record<string, string>)[p.key] = key;
+          issuesCreated++;
+        } catch {
+          warnings.push(`Could not create the tracking work item for ${p.key}.`);
+        }
+      }),
+    );
   }
 
   const summary = await loadSampleLedger(repo, targets);

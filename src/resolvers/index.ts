@@ -276,10 +276,11 @@ interface ScanState {
 
 define('admin.scan.start', async (p: { spaceIds?: string[] }) => {
   await requireAdmin();
-  const spaceIds = (p.spaceIds ?? []).map(String).filter((s) => /^\d+$/.test(s)).slice(0, 25);
+  const spaceIds = (p.spaceIds ?? []).map(String).filter((s) => /^\d+$/.test(s)).slice(0, 10);
   if (!spaceIds.length) throw new ApiError('invalid', 'Choose at least one space to scan.');
   const pages: string[] = [];
-  for (const id of spaceIds) pages.push(...(await listPageIdsInSpace(id, 250)).map((pg) => pg.id));
+  const lists = await Promise.all(spaceIds.map((id) => listPageIdsInSpace(id, 250)));
+  for (const list of lists) pages.push(...list.map((pg) => pg.id));
   const jobIds: string[] = [];
   for (let i = 0; i < pages.length; i += 50) {
     const res = await extractionQueue.push(pages.slice(i, i + 50).map((pageId) => ({ body: { kind: 'page', pageId } })));

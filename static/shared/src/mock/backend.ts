@@ -209,9 +209,9 @@ export const mockApi: Api = {
     wait({
       sql: true,
       llm: true,
-      models: ['claude-haiku (preview)', 'claude-sonnet (preview)'],
-      small: 'claude-haiku (preview)',
-      large: 'claude-sonnet (preview)',
+      models: ['small model (preview)', 'large model (preview)'],
+      small: 'small model (preview)',
+      large: 'large model (preview)',
       counts: { decisions: db.decisions.length, promises: db.promises.length, incidents: db.incidents.length, flags: db.flags.length, sample: 14 },
       lastSync: { at: '2026-11-15T03:00:00.000Z', checked: 13, changed: 1 },
     }),

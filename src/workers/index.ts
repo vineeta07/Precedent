@@ -10,7 +10,7 @@ import { HttpError } from '../platform/retry';
 import { getSettings, state } from '../platform/settings';
 import { ledger } from '../platform/sql';
 import { processDocument, type SourceDocument } from './extractionService';
-import { guardWorkItem } from './guardService';
+import { GUARD_COMMENT_PREFIX, guardWorkItem } from './guardService';
 
 export const EXTRACTION_QUEUE = 'precedent-extraction';
 export const GUARD_QUEUE = 'precedent-guard';
@@ -32,7 +32,7 @@ export interface GuardJob {
 
 interface IssueEvent {
   issue?: { key?: string; fields?: { project?: { key?: string } } };
-  comment?: { id?: string; body?: unknown; created?: string };
+  comment?: { id?: string; body?: unknown; created?: string; author?: { accountType?: string } };
   changelog?: { items?: { field?: string }[] };
 }
 
@@ -54,7 +54,9 @@ export async function onIssueEvent(event: IssueEvent & { eventType?: string }): 
 
   if (event.eventType === 'avi:jira:commented:issue') {
     const text = adfToText(event.comment?.body).trim();
-    if (event.comment?.id && text.length > 40 && WORTH_READING.test(text)) {
+    // Never read our own guard comments back in as a source.
+    const ours = event.comment?.author?.accountType === 'app' || text.startsWith(GUARD_COMMENT_PREFIX);
+    if (!ours && event.comment?.id && text.length > 40 && WORTH_READING.test(text)) {
       await extractionQueue.push({
         body: { kind: 'comment', issueKey: key, commentId: event.comment.id, text, created: event.comment.created ?? null },
       });
